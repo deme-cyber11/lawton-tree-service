@@ -1,0 +1,186 @@
+{
+  "_build_pass": "1 \u2014 Brief Lock",
+  "_built_by": "Icarus via setup-lawton-tree.py",
+  "_date": "2026-03-24",
+  "_note": "Auto-generated brief. Claude Code builds from this in Pass 2.",
+  "site": {
+    "business_name": "Lawton Tree Pros",
+    "domain": "lawtontreepros.com",
+    "niche": "Tree Service",
+    "niche_slug": "tree-service",
+    "city": "Lawton",
+    "state": "Oklahoma",
+    "state_abbr": "OK",
+    "county": "Comanche County",
+    "phone": "(580) 781-1781",
+    "phone_formatted": "(580) 781-1781",
+    "phone_digits": "15807811781",
+    "email": "contact@lawtontreepros.com",
+    "years_in_business": "8",
+    "tagline": "Lawton's Trusted Tree Experts \u2014 Fast Response, Fully Insured",
+    "web3forms_key": "0219881f-13e5-4175-b720-517b8d10c028"
+  },
+  "seo": {
+    "primary_keyword": "tree service lawton ok",
+    "search_volume": 90,
+    "keyword_difficulty": 15,
+    "cpc": 5.01,
+    "rental_tier": "$150/mo",
+    "meta_title": "Tree Service in Lawton, OK | Lawton Tree Pros",
+    "meta_description": "Professional tree service in Lawton, OK. Licensed & insured. Free estimates. Emergency tree removal available 24/7. Call (580) 781-1781."
+  },
+  "design": {
+    "primary_color": "#1a472a",
+    "accent_color": "#f5a623",
+    "style": "professional_green",
+    "font_heading": "Space Grotesk",
+    "font_body": "DM Sans",
+    "hero_style": "split_with_before_after"
+  },
+  "trust_signals": {
+    "badge_1": "Licensed & Insured",
+    "badge_2": "Free Estimates",
+    "badge_3": "5-Star Rated",
+    "badge_4": "24/7 Emergency",
+    "years_experience": "8+",
+    "jobs_completed": "500+",
+    "guarantee": "Satisfaction Guaranteed"
+  },
+  "services": [
+    {
+      "slug": "tree-removal",
+      "name": "Tree Removal"
+    },
+    {
+      "slug": "tree-trimming",
+      "name": "Tree Trimming"
+    },
+    {
+      "slug": "stump-grinding",
+      "name": "Stump Grinding"
+    },
+    {
+      "slug": "emergency-tree-service",
+      "name": "Emergency Tree Service"
+    },
+    {
+      "slug": "tree-health-assessment",
+      "name": "Tree Health Assessment"
+    },
+    {
+      "slug": "lot-clearing",
+      "name": "Lot Clearing"
+    }
+  ],
+  "service_areas": [
+    "lawton",
+    "elgin",
+    "cache",
+    "fletcher",
+    "altus",
+    "duncan",
+    "chickasha",
+    "anadarko",
+    "waurika",
+    "hobart"
+  ],
+  "testimonials": [
+    {
+      "name": "Brian W.",
+      "city": "Lawton",
+      "stars": 5,
+      "text": "Had a large oak drop a limb on my fence after a storm. Lawton Tree Pros were out the next morning, removed everything, and the cleanup was spotless. Fair price too."
+    },
+    {
+      "name": "Deb S.",
+      "city": "Elgin",
+      "stars": 5,
+      "text": "Used them for a full tree removal and stump grinding in my backyard. Professional crew, done in half a day. Will absolutely call again."
+    },
+    {
+      "name": "Marcus H.",
+      "city": "Lawton",
+      "stars": 5,
+      "text": "Free estimate was fast, no pressure, and the price was very fair. Trimmed three large trees and cleaned up every branch. Highly recommend."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does tree removal cost in Lawton, OK?",
+      "a": "Tree removal in Lawton typically ranges from $350 to $2,200 depending on tree size, location, and accessibility. Small trees under 30 ft average $350\u2013$600, large oaks or cottonwoods over 60 ft run $1,000\u2013$2,200. We provide free on-site estimates with no obligation."
+    },
+    {
+      "q": "Do you offer emergency tree service in Lawton?",
+      "a": "Yes \u2014 we offer 24/7 emergency tree service throughout Lawton and Comanche County. Storm damage, fallen trees blocking driveways or damaging structures handled around the clock. Call (580) area number anytime."
+    },
+    {
+      "q": "Is tree removal covered by homeowners insurance in Oklahoma?",
+      "a": "Oklahoma homeowners insurance typically covers tree removal when a fallen tree damages a covered structure (home, fence, garage). Removal of a standing hazard tree that hasn't caused damage is usually not covered. We work directly with insurance adjusters and provide full documentation."
+    },
+    {
+      "q": "Do you serve Elgin, Cache, and surrounding Comanche County communities?",
+      "a": "Yes \u2014 we serve all of Comanche County including Elgin, Cache, Fletcher, Waurika, and extend service to Duncan, Chickasha, Anadarko, and Hobart. Call us for service availability in your area."
+    },
+    {
+      "q": "How long does tree removal take?",
+      "a": "Most residential tree removals take 2\u20136 hours. Larger trees or those near power lines or structures may take a full day. We handle all cleanup and debris removal as part of every job."
+    }
+  ],
+  "pages": {
+    "root": [
+      "index.html",
+      "about.html",
+      "contact.html",
+      "pricing.html",
+      "faq.html",
+      "thank-you.html",
+      "404.html",
+      "sitemap.xml",
+      "robots.txt",
+      "privacy-policy.html",
+      "terms-of-service.html"
+    ],
+    "services": [
+      "services/tree-removal.html",
+      "services/tree-trimming.html",
+      "services/stump-grinding.html",
+      "services/emergency-tree-service.html",
+      "services/tree-health-assessment.html",
+      "services/lot-clearing.html"
+    ],
+    "locations": [
+      "locations/lawton.html",
+      "locations/elgin.html",
+      "locations/cache.html",
+      "locations/fletcher.html",
+      "locations/altus.html",
+      "locations/duncan.html",
+      "locations/chickasha.html",
+      "locations/anadarko.html",
+      "locations/waurika.html",
+      "locations/hobart.html"
+    ],
+    "blog": [
+      "blog/index.html",
+      "blog/how-much-does-tree-removal-cost-lawton-ok.html",
+      "blog/signs-you-need-tree-service.html",
+      "blog/how-to-choose-tree-service-contractor.html"
+    ]
+  },
+  "build": {
+    "github_repo": "lawton-tree-service",
+    "github_org": "deme-cyber11",
+    "twilio_number": "(580) 781-1781",
+    "twilio_area_code": "580",
+    "ga4_id": "G-D6ZBY16329",
+    "indexnow_key": "a3f7b2c9d4e1f8a5b6c3d0e7f4a1b8c5",
+    "started": "2026-03-24",
+    "completed": "",
+    "qa_passed": false,
+    "qa_errors": 0,
+    "committed": false,
+    "domain_registered": false,
+    "deployed": false,
+    "gsc_submitted": false
+  }
+}
