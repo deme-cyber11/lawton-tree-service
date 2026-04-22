@@ -102,7 +102,7 @@
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      fetch('https://api.web3forms.com/submit', {
+      fetch('https://lead-manager-api.irontigerdigital.workers.dev/ingest', {
         method: 'POST',
         body: new FormData(form)
       })
