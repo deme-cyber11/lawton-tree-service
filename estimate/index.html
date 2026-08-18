@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#1a1a2e">
 <title>Tree Service Request | Tree Service in Lawton, OK</title>
 <meta name="description" content="Submit your project details for an accurate estimate. Tree Service in Lawton, OK — Licensed & Insured.">
 <link rel="canonical" href="https://comanchetreeexperts.com/estimate/">
+<meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,12 +72,11 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 .footer{text-align:center;padding:32px 16px;font-size:.8125rem;color:#94a3b8}
 .footer a{color:#e94560;font-weight:500}
 </style>
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
 
 <nav class="nav">
-  <div class="nav__logo"><span>Comanche</span> Tree Experts</div>
+  <div class="nav__logo">Tree <span>Pro</span></div>
   <a href="tel:5807811781" class="nav__cta">(580) 781-1781</a>
 </nav>
 
@@ -85,12 +84,12 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 
   <div class="page-header">
     <span class="page-header__eyebrow">Free Estimate</span>
-    <h1>Request a Free Estimate from Comanche Tree Experts</h1>
+    <h1>Tree Service Request</h1>
     <p>Tell us about your trees so we can prepare an accurate quote.</p>
   </div>
 
   <form id="form" action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST">
-    <input type="hidden" name="site_domain" value="comanchetreeexperts.com">
+    <input type="hidden" name="site" value="comanchetreeexperts.com">
     <input type="hidden" name="_subject" value="New Estimate Request — Tree Service in Lawton, OK">
     <input type="hidden" name="_redirect" value="https://comanchetreeexperts.com/estimate/#success">
     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
@@ -110,16 +109,30 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         </div>
         <div class="field">
           <label for="phone">Phone Number <span class="req">*</span></label>
-          <input type="tel" id="phone" name="phone" required placeholder="(580) 781-1781">
+          <input type="tel" id="phone" name="phone" required placeholder="(555) 000-1234">
         </div>
       </div>
       <div class="field">
         <label for="email">Email Address <span class="req">*</span></label>
         <input type="email" id="email" name="email" required placeholder="you@example.com">
       </div>
+      <div class="field">
+        <label for="address">Street Address <span class="req">*</span></label>
+        <input type="text" id="address" name="address" required placeholder="123 Main St" autocomplete="address-line1">
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="city">City <span class="req">*</span></label>
+          <input type="text" id="city" name="city" required placeholder="City" autocomplete="address-level2">
+        </div>
+        <div class="field">
+          <label for="state">State <span class="req">*</span></label>
+          <input type="text" id="state" name="state" required placeholder="TX" maxlength="2" autocomplete="address-level1" oninput="this.value=this.value.toUpperCase()">
+        </div>
+      </div>
       <div class="field" style="margin-bottom:0">
-        <label for="address">Property Address <span class="req">*</span></label>
-        <input type="text" id="address" name="address" required placeholder="123 Main St, City, State ZIP">
+        <label for="zip">ZIP Code <span class="req">*</span></label>
+        <input type="text" id="zip" name="zip" required placeholder="00000" pattern="[0-9]{5}(-[0-9]{4})?" inputmode="numeric" autocomplete="postal-code">
       </div>
     </div>
 
@@ -273,8 +286,8 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         Additional Details
       </div>
       <div class="field">
-        <label for="notes">Project Description <span class="req">*</span></label>
-        <textarea id="notes" name="notes" rows="4" required placeholder="Describe the project in more detail, any concerns, previous quotes received, access issues, etc."></textarea>
+        <label for="notes">Anything else we should know?</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Describe the project in more detail, any concerns, previous quotes received, access issues, etc."></textarea>
       </div>
       <div class="field" style="margin-bottom:0">
         <label>Photos <span class="hint">(optional — helps us give a more accurate estimate)</span></label>
@@ -322,6 +335,26 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 <script>
 if(window.location.hash==='#success'){document.getElementById('form').style.display='none';document.getElementById('success').style.display='block';}
 document.getElementById('photos').addEventListener('change',function(){document.getElementById('upload-label').textContent=this.files.length?this.files.length+' photo'+(this.files.length>1?'s':'')+' selected':'Tap to upload photos';});
+document.getElementById('form').addEventListener('submit',function(e){
+  var checked=document.querySelectorAll('input[name="services[]"]:checked');
+  if(checked.length===0){
+    e.preventDefault();
+    var grid=document.querySelector('.check-grid');
+    grid.style.outline='2px solid #ef4444';
+    grid.style.borderRadius='10px';
+    grid.style.padding='4px';
+    grid.scrollIntoView({behavior:'smooth',block:'center'});
+    return;
+  }
+  var city=document.getElementById('city').value.trim();
+  var state=document.getElementById('state').value.trim();
+  var zip=document.getElementById('zip').value.trim();
+  var addr=document.getElementById('address');
+  addr.value=addr.value.trim()+', '+city+', '+state+' '+zip;
+});
+document.querySelectorAll('input[name="services[]"]').forEach(function(cb){
+  cb.addEventListener('change',function(){document.querySelector('.check-grid').style.outline='';});
+});
 </script>
 </body>
 </html>
