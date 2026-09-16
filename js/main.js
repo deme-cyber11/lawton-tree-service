@@ -92,36 +92,7 @@
     });
   });
 
-  /* --- Contact Form (Web3Forms) --- */
-  var form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn = form.querySelector('button[type="submit"]');
-      var origText = btn.textContent;
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
+  /* Lead-form submission is handled by /js/form.js (shared ITD handler). */
 
-      fetch('https://lead-manager-api.irontigerdigital.workers.dev/ingest', {
-        method: 'POST',
-        body: new FormData(form)
-      })
-        .then(function (res) { return res.json(); })
-        .then(function (data) {
-          if (data.success) {
-            window.location.href = '/thank-you.html';
-          } else {
-            btn.textContent = 'Error — Try Again';
-            btn.disabled = false;
-            setTimeout(function () { btn.textContent = origText; }, 3000);
-          }
-        })
-        .catch(function () {
-          btn.textContent = 'Error — Try Again';
-          btn.disabled = false;
-          setTimeout(function () { btn.textContent = origText; }, 3000);
-        });
-    });
-  }
 
 })();
