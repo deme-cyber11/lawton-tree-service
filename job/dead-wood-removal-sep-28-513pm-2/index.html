@@ -1,0 +1,4 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Job referral</title></head>
+<body style="margin:0;background:#f5f3f0"><div id="job" style="font:16px/1.5 system-ui,-apple-system,sans-serif;color:#5b636b;max-width:640px;margin:0 auto;padding:40px 16px">Loading job details…</div>
+<script>(function(){var el=document.getElementById('job');fetch('https://lead-manager-api.irontigerdigital.workers.dev/jobsheet/qwmdtsmbi?embed=1').then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(h){el.removeAttribute('style');el.innerHTML=h;var t=el.querySelector('h1');if(t)document.title='Job referral: '+t.textContent}).catch(function(){el.textContent='This job is no longer available or has already been claimed. Questions? Call (225) 535-4918.'})})();</script>
+</body></html>
