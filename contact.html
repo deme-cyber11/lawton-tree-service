@@ -200,7 +200,7 @@
               </div>
               <div class="form-group">
                 <label for="state">State</label>
-                <input type="text" id="state" name="state" autocomplete="address-level1" maxlength="2" pattern="[A-Za-z]{2}" title="2-letter state code">
+                <input onchange="this.value=this.value.trim()" type="text" id="state" name="state" autocomplete="address-level1" maxlength="20" pattern="[A-Za-z .]{2,20}" title="State — 2-letter code or full name">
               </div>
               <div class="form-group">
                 <label for="zip">ZIP Code *</label>
