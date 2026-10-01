@@ -1,5 +1,5 @@
 /* ============================================
-   Lawton Tree Pros — Main JS
+   Comanche Tree Experts: Main JS
    ============================================ */
 
 (function () {
@@ -74,7 +74,8 @@
   });
 
   /* --- FAQ Accordion --- */
-  document.querySelectorAll('.faq-question').forEach(function (btn) {
+  /* FAQ items are native <details> since the 2026-10-01 redesign; this only runs for any legacy button markup */
+  document.querySelectorAll('button.faq-question').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var item = btn.closest('.faq-item');
       var answer = item.querySelector('.faq-answer');

@@ -15,12 +15,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://unpkg.com">
 
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.v1.css">
-  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"></noscript>
+  <link rel="stylesheet" href="/css/styles.v1.css?v=20261001r2">
+  <noscript></noscript>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6ZBY16329"></script>
@@ -75,46 +73,41 @@
 <meta property="og:image:alt" content="Comanche Tree Experts">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://comanchetreeexperts.com/images/og-card.jpg">
+<link rel="stylesheet" href="/css/modern.css?v=20261001r2">
 </head>
-<body>
+<body class="ct ct-page">
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="site-logo"><span class="nav-logo-icon" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--color-accent,#e94560);border-radius:6px;font-weight:900;font-size:1.2rem;color:#fff;flex-shrink:0;margin-right:.5rem">LT</span> Comanche Tree Experts</a>
+    <a href="/" class="site-logo"><span class="brand-mark" aria-hidden="true">CT</span><span class="brand-name">Comanche Tree Experts</span></a>
     <nav class="main-nav" aria-label="Main navigation">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/services/tree-removal.html">Services</a></li>
-        <li><a href="/locations/lawton.html">Service Areas</a></li>
+        <li class="has-sub"><a href="/services/tree-removal.html">Services <svg class="ci ci-caret" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg></a><ul class="sub"><li><a href="/services/tree-removal.html">Tree Removal</a></li><li><a href="/services/tree-trimming.html">Tree Trimming</a></li><li><a href="/services/stump-grinding.html">Stump Grinding</a></li><li><a href="/services/emergency-tree-service.html">Emergency Tree Service</a></li><li><a href="/services/tree-health-assessment.html">Tree Health Assessment</a></li><li><a href="/services/lot-clearing.html">Lot Clearing</a></li></ul></li>
+        <li class="has-sub"><a href="/locations/lawton.html">Service Areas <svg class="ci ci-caret" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg></a><ul class="sub sub--areas"><li><a href="/locations/lawton.html">Lawton</a></li><li><a href="/locations/elgin.html">Elgin</a></li><li><a href="/locations/cache.html">Cache</a></li><li><a href="/locations/fletcher.html">Fletcher</a></li><li><a href="/locations/altus.html">Altus</a></li><li><a href="/locations/duncan.html">Duncan</a></li><li><a href="/locations/chickasha.html">Chickasha</a></li><li><a href="/locations/anadarko.html">Anadarko</a></li><li><a href="/locations/waurika.html">Waurika</a></li><li><a href="/locations/hobart.html">Hobart</a></li></ul></li>
         <li><a href="/about.html" class="active">About</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
-    <a href="tel:+15807811781" class="header-phone"><i class="ph ph-phone"></i> (580) 781-1781</a>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="ph ph-list"></i></button>
+    <a href="tel:+15807811781" class="header-phone"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> (580) 781-1781</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></button>
   </div>
 </header>
 
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <div class="container">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li>About Us</li>
-    </ol>
-  </div>
-</nav>
 
-<section class="inner-hero">
+
+<section class="inner-hero ct-hero" style="--hero-img:url(/images/r3-svc-emergency-tree-service.webp)">
   <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li>
+      <li>About Us</li></ol></nav>
     <h1>About Comanche Tree Experts</h1>
     <p class="hero-subtitle">Your trusted tree care experts serving Comanche County, Oklahoma</p>
-<img src="/images/niche-1.jpg" alt="Tree service — About" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;display:block;">
 
   </div>
 </section>
 
-<section class="content-section">
+<section class="band-light content-section">
   <div class="container">
     <div class="content-grid">
       <div class="content-main">
@@ -141,51 +134,51 @@
         <div class="sidebar-card">
           <h3>Quick Facts</h3>
           <ul class="fact-list">
-            <li><i class="ph ph-check-circle"></i> 8+ Years Experience</li>
-            <li><i class="ph ph-check-circle"></i> Licensed & Insured</li>
-            <li><i class="ph ph-check-circle"></i> 500+ Jobs Completed</li>
-            <li><i class="ph ph-check-circle"></i> Family-Owned Business</li>
-            <li><i class="ph ph-check-circle"></i> Serving Comanche County</li>
-            <li><i class="ph ph-check-circle"></i> Free Estimates</li>
+            <li><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg> 8+ Years Experience</li>
+            <li><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg> Licensed & Insured</li>
+            <li><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg> 500+ Jobs Completed</li>
+            <li><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg> Family-Owned Business</li>
+            <li><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg> Serving Comanche County</li>
+            <li><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg> Free Estimates</li>
           </ul>
         </div>
 
         <div class="sidebar-card cta-card">
           <h3>Get Your Free Estimate</h3>
           <p>Ready to discuss your tree care needs? Call us today for a free, no-obligation estimate.</p>
-          <a href="tel:+15807811781" class="btn btn-primary"><i class="ph ph-phone"></i> (580) 781-1781</a>
+          <a href="tel:+15807811781" class="btn btn-primary"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> (580) 781-1781</a>
         </div>
       </aside>
     </div>
   </div>
 </section>
 
-<section class="why-choose-section">
+<section class="band-soft why-choose-section">
   <div class="container">
     <h2 class="section-title">Why Choose Comanche Tree Experts</h2>
     <p class="section-subtitle">Experience the difference of working with true tree care professionals</p>
 
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-shield-check"></i></div>
+        <div class="feature-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg></div>
         <h3>Licensed & Insured</h3>
         <p>Fully licensed and insured for your complete protection and peace of mind. We carry comprehensive liability and workers' compensation insurance.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-users"></i></div>
+        <div class="feature-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM1.49 15.326a.78.78 0 0 1-.358-.442 3 3 0 0 1 4.308-3.516 6.484 6.484 0 0 0-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 0 1-2.07-.655ZM16.44 15.98a4.97 4.97 0 0 0 2.07-.654.78.78 0 0 0 .357-.442 3 3 0 0 0-4.308-3.517 6.484 6.484 0 0 1 1.907 3.96 2.32 2.32 0 0 1-.026.654ZM18 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM5.304 16.19a.844.844 0 0 1-.277-.71 5 5 0 0 1 9.947 0 .843.843 0 0 1-.277.71A6.975 6.975 0 0 1 10 18a6.974 6.974 0 0 1-4.696-1.81Z"/></svg></div>
         <h3>Experienced Team</h3>
         <p>Our skilled professionals have over 8 years of experience handling all types of tree care projects, from routine maintenance to complex removals.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-broom"></i></div>
+        <div class="feature-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M15.98 1.804a1 1 0 0 0-1.96 0l-.24 1.192a1 1 0 0 1-.784.785l-1.192.238a1 1 0 0 0 0 1.962l1.192.238a1 1 0 0 1 .785.785l.238 1.192a1 1 0 0 0 1.962 0l.238-1.192a1 1 0 0 1 .785-.785l1.192-.238a1 1 0 0 0 0-1.962l-1.192-.238a1 1 0 0 1-.785-.785l-.238-1.192ZM6.949 5.684a1 1 0 0 0-1.898 0l-.683 2.051a1 1 0 0 1-.633.633l-2.051.683a1 1 0 0 0 0 1.898l2.051.684a1 1 0 0 1 .633.632l.683 2.051a1 1 0 0 0 1.898 0l.683-2.051a1 1 0 0 1 .633-.633l2.051-.683a1 1 0 0 0 0-1.898l-2.051-.683a1 1 0 0 1-.633-.633L6.95 5.684ZM13.949 13.684a1 1 0 0 0-1.898 0l-.184.551a1 1 0 0 1-.632.633l-.551.183a1 1 0 0 0 0 1.898l.551.183a1 1 0 0 1 .633.633l.183.551a1 1 0 0 0 1.898 0l.184-.551a1 1 0 0 1 .632-.633l.551-.183a1 1 0 0 0 0-1.898l-.551-.184a1 1 0 0 1-.633-.632l-.183-.551Z"/></svg></div>
         <h3>Complete Cleanup</h3>
         <p>We don't just remove trees - we leave your property spotless. Complete debris removal and thorough cleanup are included with every service.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-star"></i></div>
+        <div class="feature-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd"/></svg></div>
         <h3>Customer Focused</h3>
         <p>As a family-owned business, we treat every customer like family. Your satisfaction is our priority, and we're not happy until you are.</p>
       </div>
@@ -198,13 +191,13 @@
     <h2>Ready to Work With Lawton's Best Tree Service?</h2>
     <p>Contact us today for a free estimate on your tree care project. We're here to answer your questions and provide expert solutions.</p>
     <div class="cta-buttons">
-      <a href="tel:+15807811781" class="btn btn-primary btn-large"><i class="ph ph-phone"></i> Call (580) 781-1781</a>
-      <a href="/contact.html" class="btn btn-secondary btn-large"><i class="ph ph-envelope"></i> Contact Us</a>
+      <a href="tel:+15807811781" class="btn btn-primary btn-large"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> Call (580) 781-1781</a>
+      <a href="/contact.html" class="btn btn-secondary btn-large"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"/> <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"/></svg> Contact Us</a>
     </div>
   </div>
 </section>
 
-<section class="content-section section">
+<section class="band-light content-section section">
   <div class="container">
     <h2>Why Lawton Chooses Comanche Tree Experts</h2>
     <p>Tree care in Southwest Oklahoma requires more than just a chainsaw and a bucket truck. Lawton's climate — with its hot, dry summers, occasional ice storms, and severe thunderstorms — creates specific stress patterns in trees that require an experienced eye to assess accurately. Comanche Tree Experts has spent years working on the trees of this region, learning which species are prone to specific failure modes and how to address them before they become hazards.</p>
@@ -216,7 +209,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <a href="/" class="site-logo" style="color:#fff;"><span class="nav-logo-icon" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--color-accent,#e94560);border-radius:6px;font-weight:900;font-size:1.2rem;color:#fff;flex-shrink:0;margin-right:.5rem">LT</span> Comanche Tree Experts</a>
+      <a href="/" class="site-logo"><span class="brand-mark" aria-hidden="true">CT</span><span class="brand-name">Comanche Tree Experts</span></a>
       <p>Lawton's trusted tree service experts. Licensed and insured with 8+ years of experience serving Comanche County, Oklahoma.</p>
     </div>
     <div>
@@ -262,12 +255,12 @@
 
 <div class="mobile-cta-bar">
   <div class="mobile-cta-inner">
-    <a href="tel:+15807811781" class="mobile-cta-btn mobile-cta-call"><i class="ph ph-phone"></i> Call Now</a>
-    <a href="sms:+15807811781" class="mobile-cta-btn mobile-cta-sms"><i class="ph ph-chat-text"></i> Text Us</a>
+    <a href="tel:+15807811781" class="mobile-cta-btn mobile-cta-call"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> Call Now</a>
+    <a href="sms:+15807811781" class="mobile-cta-btn mobile-cta-sms"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 0 0 1.28.53l3.58-3.579a.78.78 0 0 1 .527-.224 41.202 41.202 0 0 0 5.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0 0 10 2Zm0 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM8 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/></svg> Text Us</a>
   </div>
 </div>
 
-<script src="js/main.js" defer></script>
+<script src="/js/main.js?v=20261001r2" defer></script>
 
 </body>
 </html>

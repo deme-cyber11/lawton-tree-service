@@ -18,17 +18,13 @@
 <!-- Preconnect Hints -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://unpkg.com" crossorigin>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
 <!-- Styles -->
-<link rel="stylesheet" href="/css/styles.v1.css">
-
-<!-- Phosphor Icons (deferred) -->
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"></noscript>
+<link rel="stylesheet" href="/css/styles.v1.css?v=20261001r2">
+<noscript></noscript>
 
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6ZBY16329"></script>
@@ -73,43 +69,40 @@
 <meta property="og:image:alt" content="Comanche Tree Experts">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://comanchetreeexperts.com/images/og-card.jpg">
+<link rel="stylesheet" href="/css/modern.css?v=20261001r2">
 </head>
-<body>
+<body class="ct ct-blog">
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="site-logo"><span class="nav-logo-icon" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--color-accent,#e94560);border-radius:6px;font-weight:900;font-size:1.2rem;color:#fff;flex-shrink:0;margin-right:.5rem">LT</span> Comanche Tree Experts</a>
+    <a href="/" class="site-logo"><span class="brand-mark" aria-hidden="true">CT</span><span class="brand-name">Comanche Tree Experts</span></a>
     <nav class="main-nav" aria-label="Main navigation">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/services/tree-removal.html">Services</a></li>
-        <li><a href="/locations/lawton.html">Service Areas</a></li>
+        <li class="has-sub"><a href="/services/tree-removal.html">Services <svg class="ci ci-caret" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg></a><ul class="sub"><li><a href="/services/tree-removal.html">Tree Removal</a></li><li><a href="/services/tree-trimming.html">Tree Trimming</a></li><li><a href="/services/stump-grinding.html">Stump Grinding</a></li><li><a href="/services/emergency-tree-service.html">Emergency Tree Service</a></li><li><a href="/services/tree-health-assessment.html">Tree Health Assessment</a></li><li><a href="/services/lot-clearing.html">Lot Clearing</a></li></ul></li>
+        <li class="has-sub"><a href="/locations/lawton.html">Service Areas <svg class="ci ci-caret" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg></a><ul class="sub sub--areas"><li><a href="/locations/lawton.html">Lawton</a></li><li><a href="/locations/elgin.html">Elgin</a></li><li><a href="/locations/cache.html">Cache</a></li><li><a href="/locations/fletcher.html">Fletcher</a></li><li><a href="/locations/altus.html">Altus</a></li><li><a href="/locations/duncan.html">Duncan</a></li><li><a href="/locations/chickasha.html">Chickasha</a></li><li><a href="/locations/anadarko.html">Anadarko</a></li><li><a href="/locations/waurika.html">Waurika</a></li><li><a href="/locations/hobart.html">Hobart</a></li></ul></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/blog/" class="active">Blog</a></li>
         <li><a href="/contact.html#contact">Contact</a></li>
       </ul>
     </nav>
-    <a href="tel:+15807811781" class="header-phone"><i class="ph ph-phone"></i> (580) 781-1781</a>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="ph ph-list"></i></button>
+    <a href="tel:+15807811781" class="header-phone"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> (580) 781-1781</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></button>
   </div>
 </header>
 
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <div class="container">
-    <ol>
-      <li><a href="/"><i class="ph ph-house"></i> Home</a></li>
-      <li aria-current="page">Blog</li>
-    </ol>
-  </div>
-</nav>
 
-<section class="inner-hero">
+
+<section class="inner-hero ct-hero" style="--hero-img:url(/images/niche-5.jpg)">
   <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li>
+      <li aria-current="page">Blog</li></ol></nav>
     <h1>Tree Care Blog</h1>
     </div>
   </section>
 
-  <section class="content-section">
+  <section class="band-soft ct-posts"><div class="container"><div class="section-header"><span class="section-label">Articles</span><h2>Latest Tree Care Articles</h2></div><div class="post-grid"><a class="post-card" href="/blog/how-much-does-tree-removal-cost-lawton-ok.html"><img src="/images/r1-svc-tree-removal.webp" alt="" loading="lazy" width="900" height="560"><span class="post-card-body"><span class="post-card-date">Published March 15, 2026</span><span class="post-card-title">How Much Does Tree Removal Cost in Lawton, OK?</span><span class="post-card-more">Read the article <svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg></span></span></a><a class="post-card" href="/blog/signs-you-need-tree-service.html"><img src="/images/site/card-svc-health.jpg" alt="" loading="lazy" width="900" height="560"><span class="post-card-body"><span class="post-card-date">Published March 8, 2026</span><span class="post-card-title">7 Signs You Need Professional Tree Service</span><span class="post-card-more">Read the article <svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg></span></span></a><a class="post-card" href="/blog/how-to-choose-tree-service-contractor.html"><img src="/images/site/card-svc-trimming.jpg" alt="" loading="lazy" width="900" height="560"><span class="post-card-body"><span class="post-card-date">Published March 1, 2026</span><span class="post-card-title">How to Choose a Tree Service Contractor in Oklahoma</span><span class="post-card-more">Read the article <svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg></span></span></a></div></div></section>
+<section class="band-light content-section">
     <div class="container">
 <h2>Tree Service And Tree Removal Tips and Resources for Lawton, OK Homeowners</h2>
 <p>Welcome, Lawton, OK homeowners, to your ultimate resource for navigating the essential world of tree service and tree removal. Your property's trees are not just aesthetic assets; they contribute significantly to its value, provide shade, and support local ecosystems. However, when neglected or improperly managed, they can pose serious safety hazards, especially given Lawton's susceptibility to severe weather. This comprehensive guide is designed to empower you with the knowledge needed to make informed decisions about your trees. Here, you'll learn about critical tree care practices, understand when professional intervention is necessary, and discover tips tailored specifically for the unique climate and tree species found right here in Lawton, Oklahoma, ensuring the health, beauty, and safety of your landscape.</p>
@@ -127,12 +120,12 @@
 </ul>
 
 <h2>When to Call a Professional in Lawton, OK</h2>
-<p>While minor pruning of small shrubs might be a DIY task, Lawton homeowners should always know when to call a professional for tree service and tree removal. Attempting to remove large branches, work near power lines, or fell an entire tree without proper training, equipment, and insurance is incredibly dangerous and can lead to severe injury, costly property damage, or even fatality. A professional tree service like Lawton Tree Pros possesses the specialized equipment, expertise, and safety protocols required for complex jobs. You should call a professional when dealing with trees that are large, appear diseased or decaying, have significant storm damage, or are leaning dangerously towards structures. Furthermore, any tree work that requires climbing or using a chainsaw above shoulder height is best left to insured and experienced arborists. Their skill ensures the job is done safely, efficiently, and in a manner that protects your property and the tree's long-term health.</p>
+<p>While minor pruning of small shrubs might be a DIY task, Lawton homeowners should always know when to call a professional for tree service and tree removal. Attempting to remove large branches, work near power lines, or fell an entire tree without proper training, equipment, and insurance is incredibly dangerous and can lead to severe injury, costly property damage, or even fatality. A professional tree service like Comanche Tree Experts possesses the specialized equipment, expertise, and safety protocols required for complex jobs. You should call a professional when dealing with trees that are large, appear diseased or decaying, have significant storm damage, or are leaning dangerously towards structures. Furthermore, any tree work that requires climbing or using a chainsaw above shoulder height is best left to insured and experienced arborists. Their skill ensures the job is done safely, efficiently, and in a manner that protects your property and the tree's long-term health.</p>
 
 <h2>Seasonal Tree Service And Tree Removal Considerations in Lawton, OK</h2>
-<p>Understanding Lawton, OK's distinct seasons is key to effective tree care and removal planning. **Winter**, when trees are dormant, is often the ideal time for structural pruning, as the absence of leaves makes it easier to assess the tree's framework and identify weak points. It's also a good time for removals, as the ground is firmer and fewer plants are at risk. **Spring** is a period of rapid growth; assess any winter damage and consider fertilization for struggling trees. **Summer** brings intense heat and potential drought, so avoid heavy pruning during this stressful period. Focus on emergency removals or light canopy thinning if absolutely necessary, but prioritize deep watering. **Fall** is excellent for planting new trees, as it allows roots to establish before winter, and for removing deadwood in preparation for the upcoming dormant season.</p>
+<p>Understanding Lawton, OK's distinct seasons is key to effective tree care and removal planning. <strong>Winter</strong>, when trees are dormant, is often the ideal time for structural pruning, as the absence of leaves makes it easier to assess the tree's framework and identify weak points. It's also a good time for removals, as the ground is firmer and fewer plants are at risk. <strong>Spring</strong> is a period of rapid growth; assess any winter damage and consider fertilization for struggling trees. <strong>Summer</strong> brings intense heat and potential drought, so avoid heavy pruning during this stressful period. Focus on emergency removals or light canopy thinning if absolutely necessary, but prioritize deep watering. <strong>Fall</strong> is excellent for planting new trees, as it allows roots to establish before winter, and for removing deadwood in preparation for the upcoming dormant season.</p>
 
-<p class="cta-text">Questions about tree service and tree removal in Lawton, OK? Lawton Tree Pros is always available to answer your questions or schedule a free in-home consultation. We've served Lawton, OK homeowners for years and know the local conditions inside and out.</p>
+<p class="cta-text">Questions about tree service and tree removal in Lawton, OK? Comanche Tree Experts is always available to answer your questions or schedule a free in-home consultation. We've served Lawton, OK homeowners for years and know the local conditions inside and out.</p>
     </div>
   </section>
 
@@ -141,7 +134,7 @@
     <h2>Need Expert Tree Service?</h2>
     <p>Get a free estimate from Lawton's most trusted tree service professionals.</p>
     <div class="cta-buttons">
-      <a href="tel:+15807811781" class="btn btn-primary"><i class="ph ph-phone"></i> (580) 781-1781</a>
+      <a href="tel:+15807811781" class="btn btn-primary"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> (580) 781-1781</a>
       <a href="/contact.html#contact" class="btn btn-secondary">Get Free Estimate</a>
     </div>
   </div>
@@ -150,7 +143,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <a href="/" class="site-logo" style="color:#fff;"><span class="nav-logo-icon" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--color-accent,#e94560);border-radius:6px;font-weight:900;font-size:1.2rem;color:#fff;flex-shrink:0;margin-right:.5rem">LT</span> Comanche Tree Experts</a>
+      <a href="/" class="site-logo"><span class="brand-mark" aria-hidden="true">CT</span><span class="brand-name">Comanche Tree Experts</span></a>
       <p>Lawton's trusted tree service experts. Licensed and insured with 8+ years of experience serving Comanche County, Oklahoma.</p>
     </div>
     <div>
@@ -197,11 +190,11 @@
 <!-- Mobile CTA Bar -->
 <div class="mobile-cta-bar">
   <div class="mobile-cta-inner">
-    <a href="tel:+15807811781" class="mobile-cta-btn mobile-cta-call"><i class="ph ph-phone"></i> Call Now</a>
-    <a href="sms:+15807811781" class="mobile-cta-btn mobile-cta-sms"><i class="ph ph-chat-text"></i> Text Us</a>
+    <a href="tel:+15807811781" class="mobile-cta-btn mobile-cta-call"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> Call Now</a>
+    <a href="sms:+15807811781" class="mobile-cta-btn mobile-cta-sms"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 0 0 1.28.53l3.58-3.579a.78.78 0 0 1 .527-.224 41.202 41.202 0 0 0 5.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0 0 10 2Zm0 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM8 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/></svg> Text Us</a>
   </div>
 </div>
 
-<script src="/js/main.js" defer></script>
+<script src="/js/main.js?v=20261001r2" defer></script>
 </body>
 </html>

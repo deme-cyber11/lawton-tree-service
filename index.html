@@ -18,20 +18,16 @@
   <!-- Preconnect Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
   <!-- Hero Image Preload -->
-  <link rel="preload" as="image" href="/images/before-after/ba1-before.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/site/hero-home.jpg" fetchpriority="high">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.v1.css">
-
-  <!-- Phosphor Icons (deferred) -->
-  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"></noscript>
+  <link rel="stylesheet" href="/css/styles.v1.css?v=20261001r2">
+  <noscript></noscript>
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6ZBY16329"></script>
@@ -180,7 +176,7 @@
         "name": "How does Oklahoma's tornado and ice storm season affect tree hazard risk in Lawton?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Southwest Oklahoma averages 55+ tornado days per year in the surrounding region, and Lawton experiences regular ice storms that load branches and split structurally weak limbs. Pre-season trimming \u2014 removing dead wood, reducing crown weight, and eliminating crossing limbs \u2014 significantly reduces storm damage risk. Trees with existing cracks, decay, or poor branch attachment angles are at highest risk. A professional assessment before storm season is the most cost-effective way to avoid emergency removal costs."
+          "text": "Oklahoma averages more than 55 tornadoes a year statewide, and Lawton experiences regular ice storms that load branches and split structurally weak limbs. Pre-season trimming \u2014 removing dead wood, reducing crown weight, and eliminating crossing limbs \u2014 significantly reduces storm damage risk. Trees with existing cracks, decay, or poor branch attachment angles are at highest risk. A professional assessment before storm season is the most cost-effective way to avoid emergency removal costs."
         }
       },
       {
@@ -225,44 +221,45 @@
 <meta property="og:image:alt" content="Comanche Tree Experts">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://comanchetreeexperts.com/images/og-card.jpg">
+<link rel="stylesheet" href="/css/modern.css?v=20261001r2">
 </head>
-<body>
+<body class="ct ct-home">
 
   <!-- HEADER -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="/" class="site-logo"><span class="nav-logo-icon" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--color-accent,#e94560);border-radius:6px;font-weight:900;font-size:1.2rem;color:#fff;flex-shrink:0;margin-right:.5rem">LT</span> Comanche Tree Experts</a>
+      <a href="/" class="site-logo"><span class="brand-mark" aria-hidden="true">CT</span><span class="brand-name">Comanche Tree Experts</span></a>
       <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="/" class="active">Home</a></li>
-          <li><a href="/services/tree-removal.html">Services</a></li>
-          <li><a href="/locations/lawton.html">Service Areas</a></li>
+          <li class="has-sub"><a href="/services/tree-removal.html">Services <svg class="ci ci-caret" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg></a><ul class="sub"><li><a href="/services/tree-removal.html">Tree Removal</a></li><li><a href="/services/tree-trimming.html">Tree Trimming</a></li><li><a href="/services/stump-grinding.html">Stump Grinding</a></li><li><a href="/services/emergency-tree-service.html">Emergency Tree Service</a></li><li><a href="/services/tree-health-assessment.html">Tree Health Assessment</a></li><li><a href="/services/lot-clearing.html">Lot Clearing</a></li></ul></li>
+          <li class="has-sub"><a href="/locations/lawton.html">Service Areas <svg class="ci ci-caret" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg></a><ul class="sub sub--areas"><li><a href="/locations/lawton.html">Lawton</a></li><li><a href="/locations/elgin.html">Elgin</a></li><li><a href="/locations/cache.html">Cache</a></li><li><a href="/locations/fletcher.html">Fletcher</a></li><li><a href="/locations/altus.html">Altus</a></li><li><a href="/locations/duncan.html">Duncan</a></li><li><a href="/locations/chickasha.html">Chickasha</a></li><li><a href="/locations/anadarko.html">Anadarko</a></li><li><a href="/locations/waurika.html">Waurika</a></li><li><a href="/locations/hobart.html">Hobart</a></li></ul></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <a href="tel:+15807811781" class="header-phone"><i class="ph ph-phone"></i> (580) 781-1781</a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="ph ph-list"></i></button>
+      <a href="tel:+15807811781" class="header-phone"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> (580) 781-1781</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></button>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero ct-hero ct-hero--home" style="--hero-img:url(/images/site/hero-home.jpg)">
     <div class="container hero-grid">
       <div class="hero-content">
         <h1>Tree Removal Near Me in Lawton, OK &mdash; Cutting, Trimming &amp; Emergency Response. Free Estimates.</h1>
         <p class="hero-sub">Emergency response available &middot; Serving Lawton &amp; surrounding areas &middot; Free estimates on all jobs</p>
         <p class="hero-tagline">Tree removal in Lawton runs $200–$2,000; trimming $75–$500; stump grinding $75–$200. We offer 24/7 storm response and serve Comanche, Cotton, and Stephens counties. Free on-site estimates with most jobs scheduled within a week — emergency calls returned within 1–2 hours around the clock.</p>
         <div class="hero-badges">
-          <span class="hero-badge"><i class="ph ph-shield-check"></i> Licensed &amp; Insured</span>
-          <span class="hero-badge"><i class="ph ph-currency-dollar"></i> Free Estimates</span>
-          <span class="hero-badge"><i class="ph ph-star"></i> 5-Star Rated</span>
-          <span class="hero-badge"><i class="ph ph-lightning"></i> 24/7 Emergency</span>
+          <span class="hero-badge"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg> Licensed &amp; Insured</span>
+          <span class="hero-badge"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.75 10.818v2.614A3.13 3.13 0 0 0 11.888 13c.482-.315.612-.648.612-.875 0-.227-.13-.56-.612-.875a3.13 3.13 0 0 0-1.138-.432ZM8.33 8.62c.053.055.115.11.184.164.208.16.46.284.736.363V6.603a2.45 2.45 0 0 0-.35.13c-.14.065-.27.143-.386.233-.377.292-.514.627-.514.909 0 .184.058.39.202.592.037.051.08.102.128.152Z"/> <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-8-6a.75.75 0 0 1 .75.75v.316a3.78 3.78 0 0 1 1.653.713c.426.33.744.74.925 1.2a.75.75 0 0 1-1.395.55 1.35 1.35 0 0 0-.447-.563 2.187 2.187 0 0 0-.736-.363V9.3c.698.093 1.383.32 1.959.696.787.514 1.29 1.27 1.29 2.13 0 .86-.504 1.616-1.29 2.13-.576.377-1.261.603-1.96.696v.299a.75.75 0 1 1-1.5 0v-.3c-.697-.092-1.382-.318-1.958-.695-.482-.315-.857-.717-1.078-1.188a.75.75 0 1 1 1.359-.636c.08.173.245.376.54.569.313.205.706.353 1.138.432v-2.748a3.782 3.782 0 0 1-1.653-.713C6.9 9.433 6.5 8.681 6.5 7.875c0-.805.4-1.558 1.097-2.096a3.78 3.78 0 0 1 1.653-.713V4.75A.75.75 0 0 1 10 4Z" clip-rule="evenodd"/></svg> Free Estimates</span>
+          <span class="hero-badge"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd"/></svg> 5-Star Rated</span>
+          <span class="hero-badge"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M11.983 1.907a.75.75 0 0 0-1.292-.657l-8.5 9.5A.75.75 0 0 0 2.75 12h6.572l-1.305 6.093a.75.75 0 0 0 1.292.657l8.5-9.5A.75.75 0 0 0 17.25 8h-6.572l1.305-6.093Z"/></svg> 24/7 Emergency</span>
         </div>
         <div class="hero-buttons">
-          <a href="tel:+15807811781" class="btn btn-primary"><i class="ph ph-phone"></i> Call (580) 781-1781</a>
-          <a href="/contact.html" class="btn btn-white"><i class="ph ph-envelope"></i> Free Estimate</a>
+          <a href="tel:+15807811781" class="btn btn-primary"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> Call (580) 781-1781</a>
+          <a href="/contact.html" class="btn btn-white"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"/> <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"/></svg> Free Estimate</a>
         </div>
       </div>
       <div class="before-after-slider" aria-label="Before and after tree removal comparison">
@@ -271,7 +268,7 @@
         <span class="ba-label ba-label-before">Before</span>
         <span class="ba-label ba-label-after">After</span>
         <div class="ba-slider-line"></div>
-        <div class="ba-slider-handle" aria-label="Drag to compare"><i class="ph ph-arrows-horizontal"></i></div>
+        <div class="ba-slider-handle" aria-label="Drag to compare"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M13.2 2.24a.75.75 0 0 0 .04 1.06l2.1 1.95H6.75a.75.75 0 0 0 0 1.5h8.59l-2.1 1.95a.75.75 0 1 0 1.02 1.1l3.5-3.25a.75.75 0 0 0 0-1.1l-3.5-3.25a.75.75 0 0 0-1.06.04Zm-6.4 8a.75.75 0 0 0-1.06-.04l-3.5 3.25a.75.75 0 0 0 0 1.1l3.5 3.25a.75.75 0 1 0 1.02-1.1l-2.1-1.95h8.59a.75.75 0 0 0 0-1.5H4.66l2.1-1.95a.75.75 0 0 0 .04-1.06Z" clip-rule="evenodd"/></svg></div>
       </div>
     </div>
   </section>
@@ -280,22 +277,22 @@
   <div class="trust-bar">
     <div class="container trust-bar-grid">
       <div class="trust-item">
-        <i class="ph ph-shield-check"></i>
+        <svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg>
         <strong>Licensed &amp; Insured</strong>
         <span>Full liability coverage</span>
       </div>
       <div class="trust-item">
-        <i class="ph ph-calendar-check"></i>
+        <svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12ZM6 13.25a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 0 0 .75-.75V14a.75.75 0 0 0-.75-.75H6ZM7.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H8a.75.75 0 0 1-.75-.75V12ZM8 13.25a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 0 0 .75-.75V14a.75.75 0 0 0-.75-.75H8ZM9.25 10a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H10a.75.75 0 0 1-.75-.75V10ZM10 11.25a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 0 0 .75-.75V12a.75.75 0 0 0-.75-.75H10ZM9.25 14a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H10a.75.75 0 0 1-.75-.75V14ZM12 9.25a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 0 0 .75-.75V10a.75.75 0 0 0-.75-.75H12ZM11.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H12a.75.75 0 0 1-.75-.75V12ZM12 13.25a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 0 0 .75-.75V14a.75.75 0 0 0-.75-.75H12ZM13.25 10a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H14a.75.75 0 0 1-.75-.75V10ZM14 11.25a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 0 0 .75-.75V12a.75.75 0 0 0-.75-.75H14Z"/> <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/></svg>
         <strong>8+ Years Experience</strong>
         <span>Serving Comanche County</span>
       </div>
       <div class="trust-item">
-        <i class="ph ph-check-circle"></i>
+        <svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd"/></svg>
         <strong>500+ Jobs Completed</strong>
         <span>Satisfaction guaranteed</span>
       </div>
       <div class="trust-item">
-        <i class="ph ph-star"></i>
+        <svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd"/></svg>
         <strong>5-Star Rated</strong>
         <span>Top-rated tree service</span>
       </div>
@@ -303,7 +300,7 @@
   </div>
 
   <!-- SERVICES -->
-  <section id="services">
+  <section id="services" class="band-light">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Our Services</span>
@@ -311,38 +308,38 @@
         <p>From routine trimming to emergency storm damage, our licensed crew handles every tree job safely and efficiently.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-card-icon"><i class="ph ph-axe"></i></div>
+        <div class="service-card has-photo"><img class="sc-photo" src="/images/r1-svc-tree-removal.webp" alt="" loading="lazy" width="900" height="560">
+          <div class="service-card-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5c-2.6 0-4.6 2-4.6 4.5 0 .5.1 1 .2 1.4A4 4 0 0 0 3 11a4 4 0 0 0 4 4h2.2v3.2a.8.8 0 0 0 1.6 0V15H13a4 4 0 0 0 4-4 4 4 0 0 0-2.6-3.6c.1-.4.2-.9.2-1.4 0-2.5-2-4.5-4.6-4.5Z"/></svg></div>
           <h3>Tree Removal</h3>
           <p>Safe removal of dead, diseased, or hazardous trees from residential and commercial properties throughout Lawton.</p>
           <a href="/services/tree-removal.html" class="btn btn--ghost">Learn More</a>
         </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="ph ph-scissors"></i></div>
+        <div class="service-card has-photo"><img class="sc-photo" src="/images/site/card-svc-trimming.jpg" alt="" loading="lazy" width="900" height="560">
+          <div class="service-card-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1.469 3.75a3.5 3.5 0 0 0 5.617 4.11l.883.51c.025.092.147.116.21.043.15-.176.318-.338.5-.484.286-.23.3-.709-.018-.892l-.825-.477A3.501 3.501 0 0 0 1.47 3.75Zm2.03 3.482a2 2 0 1 1 2-3.464 2 2 0 0 1-2 3.464ZM9.956 8.322a2.75 2.75 0 0 0-1.588 1.822L7.97 11.63l-.884.51A3.501 3.501 0 0 0 1.47 16.25a3.5 3.5 0 0 0 6.367-2.81l10.68-6.166a.75.75 0 0 0-.182-1.373l-.703-.189a2.75 2.75 0 0 0-1.78.123L9.955 8.322ZM2.768 15.5a2 2 0 1 1 3.464-2 2 2 0 0 1-3.464 2Z" clip-rule="evenodd"/> <path d="M12.52 11.89a.5.5 0 0 0 .056.894l3.274 1.381a2.75 2.75 0 0 0 1.78.123l.704-.189a.75.75 0 0 0 .18-1.373l-3.47-2.004a.5.5 0 0 0-.5 0L12.52 11.89Z"/></svg></div>
           <h3>Tree Trimming</h3>
           <p>Expert pruning and trimming to improve tree health, appearance, and safety. Keep your property looking its best.</p>
           <a href="/services/tree-trimming.html" class="btn btn--ghost">Learn More</a>
         </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="ph ph-gear"></i></div>
+        <div class="service-card has-photo"><img class="sc-photo" src="/images/r5-svc-stump-grinding.webp" alt="" loading="lazy" width="900" height="560">
+          <div class="service-card-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.84 1.804A1 1 0 0 1 8.82 1h2.36a1 1 0 0 1 .98.804l.331 1.652a6.993 6.993 0 0 1 1.929 1.115l1.598-.54a1 1 0 0 1 1.186.447l1.18 2.044a1 1 0 0 1-.205 1.251l-1.267 1.113a7.047 7.047 0 0 1 0 2.228l1.267 1.113a1 1 0 0 1 .206 1.25l-1.18 2.045a1 1 0 0 1-1.187.447l-1.598-.54a6.993 6.993 0 0 1-1.929 1.115l-.33 1.652a1 1 0 0 1-.98.804H8.82a1 1 0 0 1-.98-.804l-.331-1.652a6.993 6.993 0 0 1-1.929-1.115l-1.598.54a1 1 0 0 1-1.186-.447l-1.18-2.044a1 1 0 0 1 .205-1.251l1.267-1.114a7.05 7.05 0 0 1 0-2.227L1.821 7.773a1 1 0 0 1-.206-1.25l1.18-2.045a1 1 0 0 1 1.187-.447l1.598.54A6.992 6.992 0 0 1 7.51 3.456l.33-1.652ZM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/></svg></div>
           <h3>Stump Grinding</h3>
           <p>Complete stump removal and grinding to restore your yard. Quick turnaround with full debris cleanup included.</p>
           <a href="/services/stump-grinding.html" class="btn btn--ghost">Learn More</a>
         </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="ph ph-lightning"></i></div>
+        <div class="service-card has-photo"><img class="sc-photo" src="/images/niche-4.jpg" alt="" loading="lazy" width="900" height="560">
+          <div class="service-card-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M11.983 1.907a.75.75 0 0 0-1.292-.657l-8.5 9.5A.75.75 0 0 0 2.75 12h6.572l-1.305 6.093a.75.75 0 0 0 1.292.657l8.5-9.5A.75.75 0 0 0 17.25 8h-6.572l1.305-6.093Z"/></svg></div>
           <h3>Emergency Tree Service</h3>
           <p>24/7 emergency response for storm damage, fallen trees, and hazardous situations across Comanche County.</p>
           <a href="/services/emergency-tree-service.html" class="btn btn--ghost">Learn More</a>
         </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="ph ph-heartbeat"></i></div>
+        <div class="service-card has-photo"><img class="sc-photo" src="/images/site/card-svc-health.jpg" alt="" loading="lazy" width="900" height="560">
+          <div class="service-card-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z"/></svg></div>
           <h3>Tree Health Assessment</h3>
           <p>Professional evaluation of tree health, disease diagnosis, and treatment recommendations from certified arborists.</p>
           <a href="/services/tree-health-assessment.html" class="btn btn--ghost">Learn More</a>
         </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="ph ph-bulldozer"></i></div>
+        <div class="service-card has-photo"><img class="sc-photo" src="/images/r2-svc-lot-clearing.webp" alt="" loading="lazy" width="900" height="560">
+          <div class="service-card-icon"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M6.5 3c-1.051 0-2.093.04-3.125.117A1.49 1.49 0 0 0 2 4.607V10.5h9V4.606c0-.771-.59-1.43-1.375-1.489A41.568 41.568 0 0 0 6.5 3ZM2 12v2.5A1.5 1.5 0 0 0 3.5 16h.041a3 3 0 0 1 5.918 0h.791a.75.75 0 0 0 .75-.75V12H2Z"/> <path d="M6.5 18a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM13.25 5a.75.75 0 0 0-.75.75v8.514a3.001 3.001 0 0 1 4.893 1.44c.37-.275.61-.719.595-1.227a24.905 24.905 0 0 0-1.784-8.549A1.486 1.486 0 0 0 14.823 5H13.25ZM14.5 18a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg></div>
           <h3>Lot Clearing</h3>
           <p>Complete land and lot clearing for construction, development, or property improvement projects in the Lawton area.</p>
           <a href="/services/lot-clearing.html" class="btn btn--ghost">Learn More</a>
@@ -352,124 +349,124 @@
   </section>
 
   <!-- PROBLEM (PAS Step 1) -->
-  <section class="section" style="background:#fff;">
+  <section class="section band-soft ct-problem">
     <div class="container">
       <div class="section-header">
         <h2>That Tree Isn&rsquo;t Going to Get Safer on Its Own</h2>
       </div>
-      <div style="max-width:820px;margin:0 auto;">
-        <p style="color:#374151;line-height:1.8;margin-bottom:16px;">A leaning tree. A dead limb hanging over your roof. A massive cottonwood or post oak that&rsquo;s grown within 10 feet of your foundation. These aren&rsquo;t cosmetic problems &mdash; they&rsquo;re liabilities, and they compound every season.</p>
-        <p style="color:#374151;line-height:1.8;margin-bottom:16px;">Most Lawton homeowners know something needs to happen with a tree on their property. They just keep pushing it down the priority list. The tree&rsquo;s been there for years, maybe decades. It&rsquo;ll hold another month. Another storm season.</p>
-        <p style="color:#374151;line-height:1.8;margin-bottom:16px;">Until it doesn&rsquo;t. A dead limb drops on a fence. A rotting trunk splits during Oklahoma tornado and severe storm season and lands on the corner of the roof. What started as a $600 trimming job turns into an emergency removal plus emergency roof repair &mdash; all happening at the worst possible time.</p>
-        <p style="color:#374151;line-height:1.8;">You&rsquo;re not imagining the risk. Dead wood doesn&rsquo;t announce when it&rsquo;s going to fall.</p>
-      </div>
+      <div class="ct-split"><div class="ct-prose">
+        <p>A leaning tree. A dead limb hanging over your roof. A massive cottonwood or post oak that&rsquo;s grown within 10 feet of your foundation. These aren&rsquo;t cosmetic problems &mdash; they&rsquo;re liabilities, and they compound every season.</p>
+        <p>Most Lawton homeowners know something needs to happen with a tree on their property. They just keep pushing it down the priority list. The tree&rsquo;s been there for years, maybe decades. It&rsquo;ll hold another month. Another storm season.</p>
+        <p>Until it doesn&rsquo;t. A dead limb drops on a fence. A rotting trunk splits during Oklahoma tornado and severe storm season and lands on the corner of the roof. What started as a $600 trimming job turns into an emergency removal plus emergency roof repair &mdash; all happening at the worst possible time.</p>
+        <p>You&rsquo;re not imagining the risk. Dead wood doesn&rsquo;t announce when it&rsquo;s going to fall.</p>
+      </div><figure class="ct-figure"><img src="/images/site/card-storm-cleanup.jpg" alt="Storm-broken oak limb cut into sections on a Lawton driveway" loading="lazy" width="900" height="616"></figure></div>
     </div>
   </section>
 
   <!-- AGITATE (PAS Step 2) -->
-  <section class="section" style="background:#f8fafc;">
+  <section class="section band-light ct-agitate">
     <div class="container">
       <div class="section-header">
         <h2>What a Falling Tree Actually Costs</h2>
         <p>The financial damage from a tree failure in Lawton goes well beyond the removal cost:</p>
       </div>
-      <ul style="max-width:820px;margin:0 auto;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px;">
-        <li style="background:#fff;border-radius:8px;padding:20px 24px;border-left:4px solid #e94560;line-height:1.7;"><strong>Property damage:</strong> A large falling limb can shatter a deck, fence, or vehicle. A full tree falling on a roof causes $8,000&ndash;$30,000+ in structural damage depending on where it hits.</li>
-        <li style="background:#fff;border-radius:8px;padding:20px 24px;border-left:4px solid #e94560;line-height:1.7;"><strong>Insurance complications:</strong> If an insurer can demonstrate that a tree was visibly dead or diseased &mdash; and you knew &mdash; a claim can be partially or fully denied. A &ldquo;known hazard&rdquo; changes your coverage position entirely.</li>
-        <li style="background:#fff;border-radius:8px;padding:20px 24px;border-left:4px solid #e94560;line-height:1.7;"><strong>Emergency surcharges:</strong> Tree removal during or immediately after a storm costs 30&ndash;50% more than a scheduled job. After a tornado or severe storm event, crews are booked solid across Comanche County and rates reflect that.</li>
-        <li style="background:#fff;border-radius:8px;padding:20px 24px;border-left:4px solid #e94560;line-height:1.7;"><strong>Equipment at risk:</strong> A dead tree over your AC unit isn&rsquo;t just a structural hazard &mdash; a direct hit can wipe out $3,000&ndash;$8,000 in replacement costs that insurance won&rsquo;t touch.</li>
-        <li style="background:#fff;border-radius:8px;padding:20px 24px;border-left:4px solid #e94560;line-height:1.7;"><strong>Oklahoma tornado season timing:</strong> Oklahoma tornado and severe storm season (April&ndash;June) doesn&rsquo;t give you a warning window. If a vulnerable tree is still standing when the season hits, you&rsquo;re betting on weather that doesn&rsquo;t care about your schedule.</li>
+      <ul class="ct-costs">
+        <li class="ct-cost"><strong>Property damage:</strong> A large falling limb can shatter a deck, fence, or vehicle. A full tree falling on a roof causes $8,000&ndash;$30,000+ in structural damage depending on where it hits.</li>
+        <li class="ct-cost"><strong>Insurance complications:</strong> If an insurer can demonstrate that a tree was visibly dead or diseased &mdash; and you knew &mdash; a claim can be partially or fully denied. A &ldquo;known hazard&rdquo; changes your coverage position entirely.</li>
+        <li class="ct-cost"><strong>Emergency surcharges:</strong> Tree removal during or immediately after a storm costs 30&ndash;50% more than a scheduled job. After a tornado or severe storm event, crews are booked solid across Comanche County and rates reflect that.</li>
+        <li class="ct-cost"><strong>Equipment at risk:</strong> A dead tree over your AC unit isn&rsquo;t just a structural hazard &mdash; a direct hit can wipe out $3,000&ndash;$8,000 in replacement costs that insurance won&rsquo;t touch.</li>
+        <li class="ct-cost"><strong>Oklahoma tornado season timing:</strong> Oklahoma tornado and severe storm season (April&ndash;June) doesn&rsquo;t give you a warning window. If a vulnerable tree is still standing when the season hits, you&rsquo;re betting on weather that doesn&rsquo;t care about your schedule.</li>
       </ul>
-      <p style="max-width:820px;margin:24px auto 0;color:#374151;line-height:1.8;">The calculus is simple: a planned removal costs a fraction of what an emergency removal plus property repair costs.</p>
+      <p class="ct-after">The calculus is simple: a planned removal costs a fraction of what an emergency removal plus property repair costs.</p>
     </div>
   </section>
 
   <!-- PROCESS (PAS Step 3) -->
-  <section class="section" style="background:#fff;">
+  <section class="section band-dark ct-process">
     <div class="container">
       <div class="section-header">
         <h2>What Happens When You Call for Tree Service</h2>
         <p>The hesitation most homeowners have: they&rsquo;re not sure if the tree actually needs to come down, or if a trim will handle it. We answer that question for free.</p>
       </div>
-      <div style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
-        <div style="display:flex;gap:20px;align-items:flex-start;background:#f8fafc;border-radius:8px;padding:24px;">
-          <div style="background:#e94560;color:#fff;font-weight:700;font-size:1.1rem;min-width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">1</div>
-          <div style="line-height:1.7;"><strong>You call or request an estimate.</strong> We answer, or we call back within 1&ndash;2 hours. Describe what you&rsquo;re seeing and we&rsquo;ll give you an honest first read before we visit.</div>
+      <div class="ct-steps">
+        <div class="ct-step">
+          <div class="ct-step-num">1</div>
+          <div class="ct-step-body"><strong>You call or request an estimate.</strong> We answer, or we call back within 1&ndash;2 hours. Describe what you&rsquo;re seeing and we&rsquo;ll give you an honest first read before we visit.</div>
         </div>
-        <div style="display:flex;gap:20px;align-items:flex-start;background:#f8fafc;border-radius:8px;padding:24px;">
-          <div style="background:#e94560;color:#fff;font-weight:700;font-size:1.1rem;min-width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">2</div>
-          <div style="line-height:1.7;"><strong>Free on-site assessment.</strong> A crew leader walks your property, evaluates every tree you&rsquo;re concerned about, checks for root damage, disease, and structural weakness. We tell you clearly: this one needs to come down, this one needs a trim, this one is fine for now.</div>
+        <div class="ct-step">
+          <div class="ct-step-num">2</div>
+          <div class="ct-step-body"><strong>Free on-site assessment.</strong> A crew leader walks your property, evaluates every tree you&rsquo;re concerned about, checks for root damage, disease, and structural weakness. We tell you clearly: this one needs to come down, this one needs a trim, this one is fine for now.</div>
         </div>
-        <div style="display:flex;gap:20px;align-items:flex-start;background:#f8fafc;border-radius:8px;padding:24px;">
-          <div style="background:#e94560;color:#fff;font-weight:700;font-size:1.1rem;min-width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">3</div>
-          <div style="line-height:1.7;"><strong>Written quote, your decision.</strong> You get itemized pricing &mdash; removal, trimming, stump grinding, debris hauling &mdash; all spelled out before any work starts. No vague estimates.</div>
+        <div class="ct-step">
+          <div class="ct-step-num">3</div>
+          <div class="ct-step-body"><strong>Written quote, your decision.</strong> You get itemized pricing &mdash; removal, trimming, stump grinding, debris hauling &mdash; all spelled out before any work starts. No vague estimates.</div>
         </div>
-        <div style="display:flex;gap:20px;align-items:flex-start;background:#f8fafc;border-radius:8px;padding:24px;">
-          <div style="background:#e94560;color:#fff;font-weight:700;font-size:1.1rem;min-width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">4</div>
-          <div style="line-height:1.7;"><strong>Work gets done.</strong> Our crews are insured, equipped, and efficient. Most residential jobs complete in one day. We section the tree down in controlled pieces, protect surrounding property, and don&rsquo;t leave until the job site is clean.</div>
+        <div class="ct-step">
+          <div class="ct-step-num">4</div>
+          <div class="ct-step-body"><strong>Work gets done.</strong> Our crews are insured, equipped, and efficient. Most residential jobs complete in one day. We section the tree down in controlled pieces, protect surrounding property, and don&rsquo;t leave until the job site is clean.</div>
         </div>
-        <div style="display:flex;gap:20px;align-items:flex-start;background:#f8fafc;border-radius:8px;padding:24px;">
-          <div style="background:#e94560;color:#fff;font-weight:700;font-size:1.1rem;min-width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">5</div>
-          <div style="line-height:1.7;"><strong>Stump, debris, done.</strong> We haul all debris and offer stump grinding as a same-day add-on. Your yard is usable again, not just cleared.</div>
+        <div class="ct-step">
+          <div class="ct-step-num">5</div>
+          <div class="ct-step-body"><strong>Stump, debris, done.</strong> We haul all debris and offer stump grinding as a same-day add-on. Your yard is usable again, not just cleared.</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="section" style="background:#f8fafc;">
+  <section class="section band-soft ct-testimonials">
   <div class="container">
     <div class="section-header">
       <h2>What Homeowners Are Saying</h2>
       <p>Real experiences from customers we've served</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:32px;">
-      <div style="background:white;border-radius:12px;padding:28px;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-        <p style="font-style:italic;color:#374151;line-height:1.7;margin-bottom:16px;">&ldquo;Had a massive cottonwood leaning toward our garage after a spring storm. They came out the same day I called, gave me a written quote on the spot, and had the whole thing down and chipped the next morning. Neighbors said it looked like it never happened.&rdquo;</p>
-        <p style="font-weight:600;color:var(--primary);">— Rick M. &nbsp;<span style="color:#64748b;font-weight:400;">Medicine Park area</span></p>
+    <div class="ct-quotes">
+      <div class="ct-quote">
+        <p class="ct-quote-text">&ldquo;Had a massive cottonwood leaning toward our garage after a spring storm. They came out the same day I called, gave me a written quote on the spot, and had the whole thing down and chipped the next morning. Neighbors said it looked like it never happened.&rdquo;</p>
+        <p class="ct-quote-by">— Rick M. &nbsp;<span class="ct-quote-where">Medicine Park area</span></p>
       </div>
-      <div style="background:white;border-radius:12px;padding:28px;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-        <p style="font-style:italic;color:#374151;line-height:1.7;margin-bottom:16px;">&ldquo;I&rsquo;d been putting off a dead hackberry over my back patio for two years. Finally called after seeing what happened to a neighbor&rsquo;s fence. They told me honestly the three dead limbs needed to come off but the trunk was still sound. No pressure to do the full removal. Did the trim, cleaned up completely, solid through two storms since.&rdquo;</p>
-        <p style="font-weight:600;color:var(--primary);">— Teresa J. &nbsp;<span style="color:#64748b;font-weight:400;">Elgin</span></p>
+      <div class="ct-quote">
+        <p class="ct-quote-text">&ldquo;I&rsquo;d been putting off a dead hackberry over my back patio for two years. Finally called after seeing what happened to a neighbor&rsquo;s fence. They told me honestly the three dead limbs needed to come off but the trunk was still sound. No pressure to do the full removal. Did the trim, cleaned up completely, solid through two storms since.&rdquo;</p>
+        <p class="ct-quote-by">— Teresa J. &nbsp;<span class="ct-quote-where">Elgin</span></p>
       </div>
-      <div style="background:white;border-radius:12px;padding:28px;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-        <p style="font-style:italic;color:#374151;line-height:1.7;margin-bottom:16px;">&ldquo;Three post oaks growing into our roofline. I got two other quotes that were vague about protecting the roof during the cuts. This crew used rigging, worked slowly around the shingles, and I didn&rsquo;t find a single branch in my gutters. That&rsquo;s the difference between someone who knows what they&rsquo;re doing and someone who just has a chainsaw.&rdquo;</p>
-        <p style="font-weight:600;color:var(--primary);">— Dale &amp; Pam H. &nbsp;<span style="color:#64748b;font-weight:400;">Cache</span></p>
+      <div class="ct-quote">
+        <p class="ct-quote-text">&ldquo;Three post oaks growing into our roofline. I got two other quotes that were vague about protecting the roof during the cuts. This crew used rigging, worked slowly around the shingles, and I didn&rsquo;t find a single branch in my gutters. That&rsquo;s the difference between someone who knows what they&rsquo;re doing and someone who just has a chainsaw.&rdquo;</p>
+        <p class="ct-quote-by">— Dale &amp; Pam H. &nbsp;<span class="ct-quote-where">Cache</span></p>
       </div>
     </div>
   </div>
   </section>
 
 <!-- BEFORE/AFTER GALLERY -->
-<section class="section" style="background:white;">
+<section class="section band-light ct-gallery">
   <div class="container">
     <div class="section-header">
       <h2>Our Work &mdash; Before &amp; After</h2>
       <p>Real results from real Lawton tree service projects</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;margin-top:32px;">
+    <div class="ct-ba-grid">
 
-    <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
-        <div style="position:relative;">
-          <img src="images/before-after/ba1-before.jpg" alt="Before tree service in Lawton" style="width:100%;height:220px;object-fit:cover;display:block;" loading="lazy" width="400" height="220">
-          <span style="position:absolute;top:8px;left:8px;background:rgba(0,0,0,0.7);color:white;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:0.05em;">BEFORE</span>
+    <div class="ct-ba">
+      <div class="ct-ba-pair">
+        <div class="ct-ba-item">
+          <img src="/images/before-after/ba1-before.jpg" class="ct-ba-img" alt="Before tree service in Lawton" loading="lazy" width="400" height="220">
+          <span class="ct-ba-tag">BEFORE</span>
         </div>
-        <div style="position:relative;">
-          <img src="images/before-after/ba1-after.jpg" alt="After tree service in Lawton" style="width:100%;height:220px;object-fit:cover;display:block;" loading="lazy" width="400" height="220">
-          <span style="position:absolute;top:8px;left:8px;background:var(--accent,#c8102e);color:white;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:0.05em;">AFTER</span>
+        <div class="ct-ba-item">
+          <img src="/images/before-after/ba1-after.jpg" class="ct-ba-img" alt="After tree service in Lawton" loading="lazy" width="400" height="220">
+          <span class="ct-ba-tag ct-ba-tag--after">AFTER</span>
         </div>
       </div>
     </div>
-    <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
-        <div style="position:relative;">
-          <img src="images/before-after/ba2-before.jpg" alt="Before tree service in Lawton" style="width:100%;height:220px;object-fit:cover;display:block;" loading="lazy" width="400" height="220">
-          <span style="position:absolute;top:8px;left:8px;background:rgba(0,0,0,0.7);color:white;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:0.05em;">BEFORE</span>
+    <div class="ct-ba">
+      <div class="ct-ba-pair">
+        <div class="ct-ba-item">
+          <img src="/images/before-after/ba2-before.jpg" class="ct-ba-img" alt="Before tree service in Lawton" loading="lazy" width="400" height="220">
+          <span class="ct-ba-tag">BEFORE</span>
         </div>
-        <div style="position:relative;">
-          <img src="images/before-after/ba2-after.jpg" alt="After tree service in Lawton" style="width:100%;height:220px;object-fit:cover;display:block;" loading="lazy" width="400" height="220">
-          <span style="position:absolute;top:8px;left:8px;background:var(--accent,#c8102e);color:white;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:0.05em;">AFTER</span>
+        <div class="ct-ba-item">
+          <img src="/images/before-after/ba2-after.jpg" class="ct-ba-img" alt="After tree service in Lawton" loading="lazy" width="400" height="220">
+          <span class="ct-ba-tag ct-ba-tag--after">AFTER</span>
         </div>
       </div>
     </div>
@@ -479,36 +476,36 @@
 
 
 <!-- PRICING TRANSPARENCY -->
-  <section class="section" style="background:#fff;">
+  <section class="section band-soft ct-pricing">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Pricing</span>
         <h2>What Does Tree Service Cost in Lawton?</h2>
         <p>Most tree companies won&rsquo;t post this. Here&rsquo;s the honest breakdown.</p>
       </div>
-      <div style="max-width:820px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;">
-        <div style="background:#f8fafc;border-radius:8px;padding:24px;">
-          <h3 style="margin-bottom:14px;">Tree Trimming</h3>
-          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
-            <li style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e8f0;padding-bottom:8px;"><span>Small (under 20 ft)</span><strong>$200&ndash;$400</strong></li>
-            <li style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e8f0;padding-bottom:8px;"><span>Medium (20&ndash;40 ft)</span><strong>$300&ndash;$600</strong></li>
-            <li style="display:flex;justify-content:space-between;"><span>Large (40+ ft)</span><strong>$500&ndash;$800</strong></li>
+      <div class="ct-price-grid">
+        <div class="ct-price">
+          <h3>Tree Trimming</h3>
+          <ul class="ct-price-list">
+            <li><span>Small (under 20 ft)</span><strong>$200&ndash;$400</strong></li>
+            <li><span>Medium (20&ndash;40 ft)</span><strong>$300&ndash;$600</strong></li>
+            <li><span>Large (40+ ft)</span><strong>$500&ndash;$800</strong></li>
           </ul>
         </div>
-        <div style="background:#f8fafc;border-radius:8px;padding:24px;">
-          <h3 style="margin-bottom:14px;">Tree Removal</h3>
-          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
-            <li style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e8f0;padding-bottom:8px;"><span>Small (under 30 ft)</span><strong>$350&ndash;$700</strong></li>
-            <li style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e8f0;padding-bottom:8px;"><span>Medium (30&ndash;60 ft)</span><strong>$700&ndash;$1,500</strong></li>
-            <li style="display:flex;justify-content:space-between;"><span>Large (60+ ft)</span><strong>$1,500&ndash;$2,200+</strong></li>
+        <div class="ct-price">
+          <h3>Tree Removal</h3>
+          <ul class="ct-price-list">
+            <li><span>Small (under 30 ft)</span><strong>$350&ndash;$700</strong></li>
+            <li><span>Medium (30&ndash;60 ft)</span><strong>$700&ndash;$1,500</strong></li>
+            <li><span>Large (60+ ft)</span><strong>$1,500&ndash;$2,200+</strong></li>
           </ul>
         </div>
-        <div style="background:#f8fafc;border-radius:8px;padding:24px;">
-          <h3 style="margin-bottom:14px;">Add-Ons</h3>
-          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
-            <li style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e8f0;padding-bottom:8px;"><span>Stump grinding</span><strong>$100&ndash;$400</strong></li>
-            <li style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e8f0;padding-bottom:8px;"><span>Near power lines / structure</span><strong>+$300&ndash;$800</strong></li>
-            <li style="display:flex;justify-content:space-between;"><span>Emergency / storm response</span><strong>30&ndash;50% premium</strong></li>
+        <div class="ct-price">
+          <h3>Add-Ons</h3>
+          <ul class="ct-price-list">
+            <li><span>Stump grinding</span><strong>$100&ndash;$400</strong></li>
+            <li><span>Near power lines / structure</span><strong>+$300&ndash;$800</strong></li>
+            <li><span>Emergency / storm response</span><strong>30&ndash;50% premium</strong></li>
           </ul>
         </div>
       </div>
@@ -516,26 +513,26 @@
   </section>
 
   <!-- LOCAL SPECIFICITY -->
-  <section class="section" style="background:#f8fafc;">
+  <section class="section band-light ct-local">
     <div class="container">
       <div class="section-header">
         <h2>Tree Hazards Specific to Lawton &mdash; What We See Most</h2>
       </div>
-      <div style="max-width:820px;margin:0 auto;">
-        <p style="color:#374151;line-height:1.8;margin-bottom:20px;">Lawton&rsquo;s Oklahoma tornado and severe storm season (April&ndash;June) creates a specific pattern of tree failures that less-experienced crews miss:</p>
-        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:16px;">
-          <li style="display:flex;gap:12px;align-items:flex-start;line-height:1.7;"><i class="ph ph-tree" style="color:#e94560;font-size:1.2rem;flex-shrink:0;margin-top:2px;"></i><div><strong>Cottonwood, hackberry, post oak, and pecan vulnerability:</strong> The most common large trees in Lawton neighborhoods can develop internal decay before showing visible signs. Cottonwoods especially are prone to sudden limb failure. We probe and assess, not just eyeball.</div></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;line-height:1.7;"><i class="ph ph-cloud-lightning" style="color:#e94560;font-size:1.2rem;flex-shrink:0;margin-top:2px;"></i><div><strong>Tornado and high-wind damage:</strong> Southwest Oklahoma&rsquo;s severe storm season causes hidden structural damage that weakens trees over the following weeks. Trees that survived a storm can still fail months later from cumulative stress. A post-storm inspection catches this.</div></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;line-height:1.7;"><i class="ph ph-drop" style="color:#e94560;font-size:1.2rem;flex-shrink:0;margin-top:2px;"></i><div><strong>Drought stress followed by heavy rain:</strong> Lawton&rsquo;s cycle of drought and intense spring rain weakens shallow root systems. Trees that look fine during dry months can uproot faster than expected when the soil saturates.</div></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;line-height:1.7;"><i class="ph ph-gear" style="color:#e94560;font-size:1.2rem;flex-shrink:0;margin-top:2px;"></i><div><strong>Proximity to AC units and structures:</strong> A large limb drop on an outdoor condenser unit is a $2,000&ndash;$5,000 replacement. A pre-season trim is always the cheaper option.</div></li>
+      <div class="ct-local-wrap">
+        <p class="ct-lead">Lawton&rsquo;s Oklahoma tornado and severe storm season (April&ndash;June) creates a specific pattern of tree failures that less-experienced crews miss:</p>
+        <ul class="ct-hazards">
+          <li class="ct-hazard"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5c-2.6 0-4.6 2-4.6 4.5 0 .5.1 1 .2 1.4A4 4 0 0 0 3 11a4 4 0 0 0 4 4h2.2v3.2a.8.8 0 0 0 1.6 0V15H13a4 4 0 0 0 4-4 4 4 0 0 0-2.6-3.6c.1-.4.2-.9.2-1.4 0-2.5-2-4.5-4.6-4.5Z"/></svg><div><strong>Cottonwood, hackberry, post oak, and pecan vulnerability:</strong> The most common large trees in Lawton neighborhoods can develop internal decay before showing visible signs. Cottonwoods especially are prone to sudden limb failure. We probe and assess, not just eyeball.</div></li>
+          <li class="ct-hazard"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M11.983 1.907a.75.75 0 0 0-1.292-.657l-8.5 9.5A.75.75 0 0 0 2.75 12h6.572l-1.305 6.093a.75.75 0 0 0 1.292.657l8.5-9.5A.75.75 0 0 0 17.25 8h-6.572l1.305-6.093Z"/></svg><div><strong>Tornado and high-wind damage:</strong> Southwest Oklahoma&rsquo;s severe storm season causes hidden structural damage that weakens trees over the following weeks. Trees that survived a storm can still fail months later from cumulative stress. A post-storm inspection catches this.</div></li>
+          <li class="ct-hazard"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8c-.3 0-.6.2-.8.4C7.4 4.6 3.8 9.4 3.8 12.6a6.2 6.2 0 0 0 12.4 0c0-3.2-3.6-8-5.4-10.4-.2-.2-.5-.4-.8-.4Z"/></svg><div><strong>Drought stress followed by heavy rain:</strong> Lawton&rsquo;s cycle of drought and intense spring rain weakens shallow root systems. Trees that look fine during dry months can uproot faster than expected when the soil saturates.</div></li>
+          <li class="ct-hazard"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.84 1.804A1 1 0 0 1 8.82 1h2.36a1 1 0 0 1 .98.804l.331 1.652a6.993 6.993 0 0 1 1.929 1.115l1.598-.54a1 1 0 0 1 1.186.447l1.18 2.044a1 1 0 0 1-.205 1.251l-1.267 1.113a7.047 7.047 0 0 1 0 2.228l1.267 1.113a1 1 0 0 1 .206 1.25l-1.18 2.045a1 1 0 0 1-1.187.447l-1.598-.54a6.993 6.993 0 0 1-1.929 1.115l-.33 1.652a1 1 0 0 1-.98.804H8.82a1 1 0 0 1-.98-.804l-.331-1.652a6.993 6.993 0 0 1-1.929-1.115l-1.598.54a1 1 0 0 1-1.186-.447l-1.18-2.044a1 1 0 0 1 .205-1.251l1.267-1.114a7.05 7.05 0 0 1 0-2.227L1.821 7.773a1 1 0 0 1-.206-1.25l1.18-2.045a1 1 0 0 1 1.187-.447l1.598.54A6.992 6.992 0 0 1 7.51 3.456l.33-1.652ZM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/></svg><div><strong>Proximity to AC units and structures:</strong> A large limb drop on an outdoor condenser unit is a $2,000&ndash;$5,000 replacement. A pre-season trim is always the cheaper option.</div></li>
         </ul>
-        <p style="margin-top:20px;color:#374151;line-height:1.8;">We&rsquo;ve worked across Lawton, Elgin, Fletcher, Duncan, and surrounding Comanche County communities. If you have a species or site condition we haven&rsquo;t mentioned, we&rsquo;ve likely seen it.</p>
+        <p class="ct-after">We&rsquo;ve worked across Lawton, Elgin, Fletcher, Duncan, and surrounding Comanche County communities. If you have a species or site condition we haven&rsquo;t mentioned, we&rsquo;ve likely seen it.</p>
       </div>
     </div>
   </section>
 
     <!-- FAQ -->
-  <section id="faq">
+  <section id="faq" class="band-soft">
     <div class="container">
       <div class="section-header">
         <span class="section-label">FAQ</span>
@@ -543,60 +540,24 @@
         <p>Common questions about tree service in Lawton, Oklahoma.</p>
       </div>
       <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question">How do I know if the tree needs to come down or just get trimmed? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Signs of removal-level problems: significant lean that wasn&rsquo;t there before, large sections of dead wood throughout the canopy, visible root damage or heaving, fungal growth at the base, trunk cracks that go deep. A professional assessment solves this &mdash; you don&rsquo;t need to guess, and we&rsquo;ll never recommend removal when a trim is the right answer.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Are you insured if something goes wrong? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes. Full general liability and workers&rsquo; compensation coverage. Any legitimate tree service in Lawton should be able to produce a certificate of insurance on request. If a company hesitates on that question, that&rsquo;s your answer.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Is tree removal covered by homeowners insurance in Oklahoma? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Oklahoma homeowners insurance typically covers tree removal when a fallen tree damages a covered structure. Removal of a standing hazard tree that hasn&rsquo;t caused damage is usually not covered. We work directly with insurance adjusters and provide full documentation.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">What happens to the debris after the job? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">We chip branches and haul everything away. Large trunk sections can be cut into rounds and left if you want firewood &mdash; just ask. Your yard is clean before we leave.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Do you handle emergency calls after storms? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes &mdash; we respond to storm damage and hazardous situations outside normal business hours. Call (580) 781-1781 any time. Emergency response is typically within 2&ndash;4 hours depending on demand after major weather events.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Do you serve Elgin, Cache, Fletcher, and Duncan? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes &mdash; we serve Lawton, Elgin, Fletcher, Duncan, and surrounding Comanche County communities. Call us to confirm availability in your specific area.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">How much does tree removal cost in Lawton? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Tree removal in Lawton runs $200&ndash;$2,000 depending on size and location. Small trees under 30 ft average $200&ndash;$500; large cottonwoods or post oaks over 60 ft run $800&ndash;$2,000. All prices include debris removal. Free on-site estimates with no obligation.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">How much does tree trimming cost in Lawton? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Tree trimming in Lawton costs $75&ndash;$500 per tree. Crown cleaning on a standard residential tree runs $150&ndash;$300. Large oaks or cottonwoods requiring bucket truck access can reach $400&ndash;$500. Trimming multiple trees in one visit reduces per-tree cost. Written quotes on-site before any work begins.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">How much does stump grinding cost in Lawton? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Stump grinding in Lawton costs $75&ndash;$200 per stump based on diameter. Most stumps are ground 6&ndash;10 inches below grade. Multiple stumps on the same visit receive a reduced per-stump rate. We leave chips on-site or haul them off &mdash; your choice.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Do you serve Comanche, Cotton, and Stephens counties? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes &mdash; we serve all of Comanche, Cotton, and Stephens counties, including Elgin, Cache, Fletcher, Chickasha, Duncan, Waurika, and Anadarko. Travel charges may apply for locations more than 40 miles from Lawton &mdash; we confirm this before your estimate.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">What tree species are most common in Lawton? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Common Lawton-area species include post oak, blackjack oak, eastern red cedar, pecan, and cottonwood. Post and blackjack oaks are drought-tolerant but susceptible to oak wilt. Cottonwoods grow fast but develop weak branch unions prone to splitting in high winds. Eastern red cedars encroach rapidly onto native grassland. Pecans can live 100+ years but need regular deadwood removal.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">How does Oklahoma&rsquo;s tornado and ice storm season affect tree hazard risk? <i class="ph ph-caret-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Southwest Oklahoma averages 55+ tornado days per year in the surrounding region, and Lawton experiences regular ice storms that load branches and split structurally weak limbs. Pre-season trimming &mdash; removing dead wood, reducing crown weight &mdash; significantly reduces storm damage risk. A professional assessment before storm season is the most cost-effective hazard mitigation.</div></div>
-        </div>
+        <details class="faq-item"><summary class="faq-question">How do I know if the tree needs to come down or just get trimmed?</summary><div class="faq-answer"><div class="faq-answer-inner">Signs of removal-level problems: significant lean that wasn&rsquo;t there before, large sections of dead wood throughout the canopy, visible root damage or heaving, fungal growth at the base, trunk cracks that go deep. A professional assessment solves this &mdash; you don&rsquo;t need to guess, and we&rsquo;ll never recommend removal when a trim is the right answer.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">Are you insured if something goes wrong?</summary><div class="faq-answer"><div class="faq-answer-inner">Yes. Full general liability and workers&rsquo; compensation coverage. Any legitimate tree service in Lawton should be able to produce a certificate of insurance on request. If a company hesitates on that question, that&rsquo;s your answer.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">Is tree removal covered by homeowners insurance in Oklahoma?</summary><div class="faq-answer"><div class="faq-answer-inner">Oklahoma homeowners insurance typically covers tree removal when a fallen tree damages a covered structure. Removal of a standing hazard tree that hasn&rsquo;t caused damage is usually not covered. We work directly with insurance adjusters and provide full documentation.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">What happens to the debris after the job?</summary><div class="faq-answer"><div class="faq-answer-inner">We chip branches and haul everything away. Large trunk sections can be cut into rounds and left if you want firewood &mdash; just ask. Your yard is clean before we leave.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">Do you handle emergency calls after storms?</summary><div class="faq-answer"><div class="faq-answer-inner">Yes &mdash; we respond to storm damage and hazardous situations outside normal business hours. Call (580) 781-1781 any time. Emergency response is typically within 2&ndash;4 hours depending on demand after major weather events.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">Do you serve Elgin, Cache, Fletcher, and Duncan?</summary><div class="faq-answer"><div class="faq-answer-inner">Yes &mdash; we serve Lawton, Elgin, Fletcher, Duncan, and surrounding Comanche County communities. Call us to confirm availability in your specific area.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">How much does tree removal cost in Lawton?</summary><div class="faq-answer"><div class="faq-answer-inner">Tree removal in Lawton runs $200&ndash;$2,000 depending on size and location. Small trees under 30 ft average $200&ndash;$500; large cottonwoods or post oaks over 60 ft run $800&ndash;$2,000. All prices include debris removal. Free on-site estimates with no obligation.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">How much does tree trimming cost in Lawton?</summary><div class="faq-answer"><div class="faq-answer-inner">Tree trimming in Lawton costs $75&ndash;$500 per tree. Crown cleaning on a standard residential tree runs $150&ndash;$300. Large oaks or cottonwoods requiring bucket truck access can reach $400&ndash;$500. Trimming multiple trees in one visit reduces per-tree cost. Written quotes on-site before any work begins.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">How much does stump grinding cost in Lawton?</summary><div class="faq-answer"><div class="faq-answer-inner">Stump grinding in Lawton costs $75&ndash;$200 per stump based on diameter. Most stumps are ground 6&ndash;10 inches below grade. Multiple stumps on the same visit receive a reduced per-stump rate. We leave chips on-site or haul them off &mdash; your choice.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">Do you serve Comanche, Cotton, and Stephens counties?</summary><div class="faq-answer"><div class="faq-answer-inner">Yes &mdash; we serve all of Comanche, Cotton, and Stephens counties, including Elgin, Cache, Fletcher, Chickasha, Duncan, Waurika, and Anadarko. Travel charges may apply for locations more than 40 miles from Lawton &mdash; we confirm this before your estimate.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">What tree species are most common in Lawton?</summary><div class="faq-answer"><div class="faq-answer-inner">Common Lawton-area species include post oak, blackjack oak, eastern red cedar, pecan, and cottonwood. Post and blackjack oaks are drought-tolerant but susceptible to oak wilt. Cottonwoods grow fast but develop weak branch unions prone to splitting in high winds. Eastern red cedars encroach rapidly onto native grassland. Pecans can live 100+ years but need regular deadwood removal.</div></div></details>
+        <details class="faq-item"><summary class="faq-question">How does Oklahoma&rsquo;s tornado and ice storm season affect tree hazard risk?</summary><div class="faq-answer"><div class="faq-answer-inner">Oklahoma averages more than 55 tornadoes a year statewide, and Lawton experiences regular ice storms that load branches and split structurally weak limbs. Pre-season trimming &mdash; removing dead wood, reducing crown weight &mdash; significantly reduces storm damage risk. A professional assessment before storm season is the most cost-effective hazard mitigation.</div></div></details>
       </div>
     </div>
   </section>
 
   <!-- SERVICE AREAS -->
-  <section style="background: var(--off-white);">
+  <section class="band-light ct-areas">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Service Areas</span>
@@ -604,16 +565,16 @@
         <p>Professional tree service across southwest Oklahoma.</p>
       </div>
       <div class="areas-grid">
-        <a href="/locations/lawton.html" class="area-card"><i class="ph ph-map-pin"></i> Lawton</a>
-        <a href="/locations/elgin.html" class="area-card"><i class="ph ph-map-pin"></i> Elgin</a>
-        <a href="/locations/cache.html" class="area-card"><i class="ph ph-map-pin"></i> Cache</a>
-        <a href="/locations/fletcher.html" class="area-card"><i class="ph ph-map-pin"></i> Fletcher</a>
-        <a href="/locations/altus.html" class="area-card"><i class="ph ph-map-pin"></i> Altus</a>
-        <a href="/locations/duncan.html" class="area-card"><i class="ph ph-map-pin"></i> Duncan</a>
-        <a href="/locations/chickasha.html" class="area-card"><i class="ph ph-map-pin"></i> Chickasha</a>
-        <a href="/locations/anadarko.html" class="area-card"><i class="ph ph-map-pin"></i> Anadarko</a>
-        <a href="/locations/waurika.html" class="area-card"><i class="ph ph-map-pin"></i> Waurika</a>
-        <a href="/locations/hobart.html" class="area-card"><i class="ph ph-map-pin"></i> Hobart</a>
+        <a href="/locations/lawton.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Lawton</a>
+        <a href="/locations/elgin.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Elgin</a>
+        <a href="/locations/cache.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Cache</a>
+        <a href="/locations/fletcher.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Fletcher</a>
+        <a href="/locations/altus.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Altus</a>
+        <a href="/locations/duncan.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Duncan</a>
+        <a href="/locations/chickasha.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Chickasha</a>
+        <a href="/locations/anadarko.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Anadarko</a>
+        <a href="/locations/waurika.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Waurika</a>
+        <a href="/locations/hobart.html" class="area-card"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd"/></svg> Hobart</a>
       </div>
     </div>
   </section>
@@ -624,13 +585,13 @@
       <h2>Don&rsquo;t Wait Until Tornado Season Makes It an Emergency</h2>
       <p>Lawton homeowners who schedule tree work before storm season pay planned rates, get first-choice scheduling, and don&rsquo;t spend the next storm watching a problem tree from their living room window. The estimate is free. The call takes 10 minutes. If it&rsquo;s already an emergency &mdash; tree down, limb on the roof, hazard that can&rsquo;t wait &mdash; call now. We answer or call back within 1&ndash;2 hours.</p>
       <div class="cta-buttons">
-        <a href="tel:+15807811781" class="btn btn-secondary"><i class="ph ph-phone"></i> Call (580) 781-1781</a>
-        <a href="/contact.html" class="btn btn--ghost"><i class="ph ph-envelope"></i> Get Free Estimate</a>
+        <a href="tel:+15807811781" class="btn btn-secondary"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> Call (580) 781-1781</a>
+        <a href="/contact.html" class="btn btn--ghost"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"/> <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"/></svg> Get Free Estimate</a>
       </div>
     </div>
   </section>
 
-  <section class="content-section section">
+  <section class="content-section section band-soft ct-seo">
     <div class="container">
       <h2>Expert Tree Service for Lawton and Southwest Oklahoma</h2>
       <p>Tree care in Southwest Oklahoma isn't a one-size-fits-all business. The region's trees — including native post oaks, blackjack oaks, eastern red cedars, and cottonwoods — have specific growth habits and vulnerabilities that require local knowledge to manage well. Add in the region's tornado risk, ice storm history, and summer drought stress, and you have an environment where proper tree care genuinely matters for safety, not just aesthetics.</p>
@@ -643,7 +604,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="/" class="site-logo" style="color:#fff;"><span class="nav-logo-icon" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--color-accent,#e94560);border-radius:6px;font-weight:900;font-size:1.2rem;color:#fff;flex-shrink:0;margin-right:.5rem">LT</span> Comanche Tree Experts</a>
+        <a href="/" class="site-logo"><span class="brand-mark" aria-hidden="true">CT</span><span class="brand-name">Comanche Tree Experts</span></a>
         <p>Lawton's trusted tree service experts. Licensed and insured with 8+ years of experience serving Comanche County, Oklahoma.</p>
       </div>
       <div>
@@ -690,11 +651,11 @@
   <!-- Mobile CTA Bar -->
   <div class="mobile-cta-bar">
     <div class="mobile-cta-inner">
-      <a href="tel:+15807811781" class="mobile-cta-btn mobile-cta-call"><i class="ph ph-phone"></i> Call Now</a>
-      <a href="sms:+15807811781" class="mobile-cta-btn mobile-cta-sms"><i class="ph ph-chat-text"></i> Text Us</a>
+      <a href="tel:+15807811781" class="mobile-cta-btn mobile-cta-call"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd"/></svg> Call Now</a>
+      <a href="sms:+15807811781" class="mobile-cta-btn mobile-cta-sms"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 0 0 1.28.53l3.58-3.579a.78.78 0 0 1 .527-.224 41.202 41.202 0 0 0 5.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0 0 10 2Zm0 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM8 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/></svg> Text Us</a>
     </div>
   </div>
 
-  <script src="js/main.js" defer></script>
+  <script src="/js/main.js?v=20261001r2" defer></script>
 </body>
 </html>
