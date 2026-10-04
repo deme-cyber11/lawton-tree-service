@@ -16,14 +16,14 @@
 (function () {
   var t = (new URLSearchParams(location.search).get('t') || '').replace(/[^a-z0-9]/gi, '');
   var el = document.getElementById('job');
-  if (!t) { el.textContent = 'This job link is incomplete. Call (225) 535-4918 and we will sort it out.'; return; }
+  if (!t) { el.textContent = 'This job link is incomplete. Call (512) 956-7133 and we will sort it out.'; return; }
   fetch('https://lead-manager-api.irontigerdigital.workers.dev/jobsheet/' + t + '?embed=1')
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
     .then(function (html) {
       el.removeAttribute('style'); el.innerHTML = html;
       var h = el.querySelector('h1'); if (h) document.title = 'Job referral: ' + h.textContent;
     })
-    .catch(function () { el.textContent = 'This job is no longer available or has already been claimed. Questions? Call (225) 535-4918.'; });
+    .catch(function () { el.textContent = 'This job is no longer available or has already been claimed. Questions? Call (512) 956-7133.'; });
 })();
 </script>
 </body>
