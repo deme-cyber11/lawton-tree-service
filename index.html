@@ -18,7 +18,8 @@
   <!-- Preconnect Hints -->
 
   <!-- Hero Image Preload -->
-  <link rel="preload" as="image" href="/images/site/hero-home.jpg">
+  <link rel="preload" as="image" href="/images/site/hero-home-m.jpg" media="(max-width: 640px)">
+  <link rel="preload" as="image" href="/images/site/hero-home.jpg" media="(min-width: 641px)">
 
   <!-- Fonts -->
   <link href="/fonts/gf/spacegrotesk-dmsans-2a6630c47d.css" rel="stylesheet">
@@ -243,7 +244,7 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero ct-hero ct-hero--home" style="--hero-img:url(/images/site/hero-home.jpg)">
+  <section class="hero ct-hero ct-hero--home" style="--hero-img:url(/images/site/hero-home.jpg);--hero-img-m:url(/images/site/hero-home-m.jpg)">
     <div class="container hero-grid">
       <div class="hero-content">
         <h1>Tree Removal Near Me in Lawton, OK &mdash; Cutting, Trimming &amp; Emergency Response. Free Estimates.</h1>
@@ -261,8 +262,8 @@
         </div>
       </div>
       <div class="before-after-slider" aria-label="Before and after tree removal comparison">
-        <img src="/images/before-after/ba1-after.jpg" alt="After tree removal — cleared yard in Lawton OK" class="ba-img ba-img-after" width="1000" height="700" loading="eager">
-        <img src="/images/before-after/ba1-before.jpg" alt="Before tree removal — storm-damaged oak over a home in Lawton OK" class="ba-img ba-img-before" width="1000" height="700" loading="eager">
+        <img src="/images/before-after/ba1-after.jpg" srcset="/images/before-after/ba1-after-720.jpg 720w, /images/before-after/ba1-after.jpg 1000w" sizes="(max-width: 672px) calc(100vw - 40px), (max-width: 1099px) 632px, 500px" alt="After tree removal — cleared yard in Lawton OK" class="ba-img ba-img-after" width="1000" height="700" loading="eager">
+        <img src="/images/before-after/ba1-before.jpg" srcset="/images/before-after/ba1-before-720.jpg 720w, /images/before-after/ba1-before.jpg 1000w" sizes="(max-width: 672px) calc(100vw - 40px), (max-width: 1099px) 632px, 500px" alt="Before tree removal — storm-damaged oak over a home in Lawton OK" class="ba-img ba-img-before" width="1000" height="700" loading="eager">
         <span class="ba-label ba-label-before">Before</span>
         <span class="ba-label ba-label-after">After</span>
         <div class="ba-slider-line"></div>

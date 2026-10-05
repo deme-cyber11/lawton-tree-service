@@ -440,3 +440,6 @@ body.ct .contact-info-item > div { min-width: 0; }
 body.ct .contact-info-item :is(span, a, p) { overflow-wrap: anywhere; }
 @media (hover: none) { body.ct .crumbs a { min-width: 44px; justify-content: center; } }
 @media (hover: none) { body.ct :is(.contact-info-item, .legal-content, .content-section) a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; } }
+
+/* speed: phones get a mobile-sized copy of the hero photo (lcp second pass, 2026-10-05) */
+@media (max-width: 640px) { [style*="--hero-img-m"] { --hero-img: var(--hero-img-m) !important; } }
