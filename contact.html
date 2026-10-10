@@ -121,6 +121,7 @@
           <div id="form-success" style="display:none;background:#ecfdf5;border:1.5px solid #10b981;border-radius:10px;padding:20px;color:#065f46;margin-bottom:16px" role="status" aria-live="polite"><strong>Thanks — we got your request.</strong><br>We'll reach out shortly. Need us sooner? Call <a href="tel:5807811781">(580) 781-1781</a>.</div>
 <div id="form-error" style="display:none;background:#fef2f2;border:1.5px solid #ef4444;border-radius:10px;padding:20px;color:#7f1d1d;margin-bottom:16px" role="alert" aria-live="assertive"></div>
           <form id="contact-form" class="contact-form" action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST" data-success="form-success" data-error="form-error" data-strict="true" data-fallback-tel="(580) 781-1781">
+<input type="hidden" name="page_url" value="/contact.html">
       <input type="hidden" name="site_domain" value="comanchetreeexperts.com">
       <input type="hidden" name="_subject" value="New Lead — comanchetreeexperts.com">
       <input type="hidden" name="_redirect" value="https://comanchetreeexperts.com/contact.html#success">
@@ -181,7 +182,8 @@
                 <input type="text" id="zip" name="zip" required autocomplete="postal-code" inputmode="numeric" maxlength="10" pattern="[0-9]{5}(-[0-9]{4})?" title="5-digit ZIP">
               </div>
     <button type="submit" class="btn btn-primary form-submit"><svg class="ci" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3.105 2.288a.75.75 0 0 0-.826.95l1.414 4.926A1.5 1.5 0 0 0 5.135 9.25h6.115a.75.75 0 0 1 0 1.5H5.135a1.5 1.5 0 0 0-1.442 1.086l-1.414 4.926a.75.75 0 0 0 .826.95 28.897 28.897 0 0 0 15.293-7.155.75.75 0 0 0 0-1.114A28.897 28.897 0 0 0 3.105 2.288Z"/></svg> Send Request</button>
-          </form>
+          <p class="itd-form-notice" style="grid-column:1/-1;margin:.75rem 0 0;font-size:.8125rem;line-height:1.5;text-align:center">Your request and contact details go to an independent local contractor who serves your area, so they can contact you about your project.</p>
+</form>
         </div>
       </div>
     </div>
@@ -288,5 +290,8 @@
 
   <script src="/js/main.js?v=20261001r2" defer></script>
 <script src="/js/form.js" defer></script>
+<!-- itd-d24: page attribution for leads and calls, managed by tools/page-attribution-plan.py -->
+<script>(function(){var A='https://lead-manager-api.irontigerdigital.workers.dev';function f(){var fs=document.querySelectorAll('form');for(var i=0;i<fs.length;i++){var x=fs[i],a=x.getAttribute('action')||'';if(a&&a.indexOf('/ingest')<0)continue;var h=x.querySelector('input[name="page_url"]');if(!h){h=document.createElement('input');h.type='hidden';h.name='page_url';x.appendChild(h);}h.value=location.pathname;}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f();document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('a[href^="tel:"]'):null;if(!t||!navigator.sendBeacon)return;try{navigator.sendBeacon(A+'/track/call-click',JSON.stringify({site:location.hostname.replace(/^www\./,''),page_path:location.pathname,tel:t.getAttribute('href')}));}catch(_){}},true);})();</script>
+<!-- /itd-d24 -->
 </body>
 </html>

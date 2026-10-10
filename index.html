@@ -659,5 +659,8 @@
   </div>
 
   <script src="/js/main.js?v=20261001r2" defer></script>
+<!-- itd-d24: page attribution for leads and calls, managed by tools/page-attribution-plan.py -->
+<script>(function(){var A='https://lead-manager-api.irontigerdigital.workers.dev';function f(){var fs=document.querySelectorAll('form');for(var i=0;i<fs.length;i++){var x=fs[i],a=x.getAttribute('action')||'';if(a&&a.indexOf('/ingest')<0)continue;var h=x.querySelector('input[name="page_url"]');if(!h){h=document.createElement('input');h.type='hidden';h.name='page_url';x.appendChild(h);}h.value=location.pathname;}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f();document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('a[href^="tel:"]'):null;if(!t||!navigator.sendBeacon)return;try{navigator.sendBeacon(A+'/track/call-click',JSON.stringify({site:location.hostname.replace(/^www\./,''),page_path:location.pathname,tel:t.getAttribute('href')}));}catch(_){}},true);})();</script>
+<!-- /itd-d24 -->
 </body>
 </html>
