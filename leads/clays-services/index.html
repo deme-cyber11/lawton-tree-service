@@ -201,6 +201,7 @@ footer a { color: var(--accent); }
 .sb-badge[data-status="Active"]        { background: #d1fae5; color: #065f46; }
 .sb-badge[data-status="Contacted"]     { background: #dbeafe; color: #1e40af; }
 .sb-badge[data-status="Quote Sent"]    { background: #fef3c7; color: #92400e; }
+.sb-badge[data-status="Closed Won"]    { background: #15803d; color: #fff; }
 .sb-badge[data-status="Closed / Lost"] { background: #fee2e2; color: #991b1b; }
 .sb-wrap { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,.07); overflow: hidden; margin-top: .5rem; }
 .sb-header { display: grid; grid-template-columns: 1fr auto; gap: .5rem 1rem; padding: .5rem 1rem; background: var(--dark); color: rgba(255,255,255,.72); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
@@ -355,7 +356,7 @@ h1, h2, h3, .lead-title, .summary-stat .val, .cta-card h3 {
       <button class="sb-badge" data-id="johnny-monroe" data-status="Active" onclick="cycleStatus(this)">Active</button>
     </div>
   </div>
-  <p class="sb-hint">Tap a status to cycle: Active, Contacted, Quote Sent, Closed / Lost. Tap Notes to keep your own notes on a lead. Both save for everyone with this link, on any device.</p>
+  <p class="sb-hint">Tap a status to cycle: Active, Contacted, Quote Sent, Closed Won, Closed / Lost. Tap Notes to keep your own notes on a lead. Both save for everyone with this link, on any device.</p>
 </div><!-- /#tab-status -->
 
 <div class="terms">
@@ -406,7 +407,7 @@ function switchTab(name) {
 // It was only ever saved on the device that clicked. Now: the server is the
 // source of truth (strongly consistent D1), every save is checked, a failed
 // save reverts and says so, and open pages refresh themselves.
-var STATUSES = ['Active', 'Contacted', 'Quote Sent', 'Closed / Lost'];
+var STATUSES = ['Active', 'Contacted', 'Quote Sent', 'Closed Won', 'Closed / Lost'];
 var LS_PREFIX = '1-awesome-pool-sb-';
 var API = 'https://lead-manager-api.irontigerdigital.workers.dev/api/packet-status?pin=3636';
 var PACKET = 'clays-services';
